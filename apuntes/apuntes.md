@@ -1,0 +1,1 @@
+En el normalize se debe poner en cero el margin de la etiqueta h1
