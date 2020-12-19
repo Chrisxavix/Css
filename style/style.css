@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(17, 11, 22);
+}
+
+h1 {
+    color: rgb(204, 156, 25);
+}
+
+h2 {
+    color: rgb(165, 136, 42);
+}
+
+li {
+    margin-top: 6px;
+}
+
+a {
+  color: #fff;
+}
