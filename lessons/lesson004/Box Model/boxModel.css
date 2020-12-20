@@ -1,0 +1,138 @@
+h1 {
+    background-color: blueviolet;
+    height: 100px;
+    width: 100px;
+}
+
+h2 {
+    background-color: cadetblue;
+}
+
+h3 {
+    background: darkseagreen;
+}
+
+a {
+    background-color: darkcyan;
+}
+
+.box-1 {
+    height: 100px;
+    width: 100px;
+    background: darkgreen;
+    padding: 20px;
+    border: 10px solid tomato;
+    margin: 20px;
+    /* outline casi no se usa, es más para enontrar el elemento, además no ocupa espacio, no empueja 
+    sus alrededores, se sobrepone */
+    outline: 15px solid violet;
+
+}
+
+.box-2 {
+    height: 110px;
+    width: 110px;
+    background: rgb(100, 68, 0);
+}
+
+.box1 {
+    background: yellow;
+    height: 70px;
+    width: 70px;
+}
+
+.box2 {
+    background: tomato;
+    height: 70px;
+    width: 70px;
+    margin: 30px 50px;
+    /* al tener dos valores en el margin, el primero es de arriba y abajo, el segundo es izquiera o derecha,
+    más que todo es para evitar poner más lines, sino quedaría así */
+    /* Por cada lado: */
+    /* 
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+    margin-left: 50px; 
+    */
+
+    /* 
+    y mejor ponemos esto:
+    */
+
+    /* 
+    margin: 40px 70px;
+    */
+
+    /* De igual manera sucede con padding */
+    
+    /* 
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 60px;
+    */
+    
+
+}
+
+.box3 {
+    background: rgb(4, 190, 144);
+    height: 70px;
+    width: 70px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+    color: crimson;
+}
+
+.box__1 {
+    width: 100px;
+    height: 100px;
+    background: rgb(5, 36, 5);
+    border: 10px solid;
+    
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+    border-left-color: darkred;
+    border-right-color: darkturquoise;
+    border-bottom-color: dimgray;
+    border-top-color: darkviolet;
+
+    border-left-style: dotted;
+    border-right-style: groove;
+    border-top-style: dashed;
+    border-bottom-style: inset;
+}
+
+.box___1, .box___2, .box___3 {
+    height: 120px;
+    width: 120px;
+    margin: 5px;
+}
+
+.box___1 {
+    background: cornflowerblue;
+}
+
+.box___2 {
+    background: darkmagenta;
+}
+
+.box___3 {
+    background: rgb(16, 29, 8);
+}
+
+.box____1 {
+    background: lawngreen;
+    height: 100px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
