@@ -1,0 +1,19 @@
+.menu {
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    background: darkcyan;
+    padding: 20px;
+    position: fixed;
+    /* el top 0 es para que se posicione desde el inicio, ya que 
+    es fixed, y estará siempre en la pantalla, así haya un scroll */
+    top: 0;
+    /* el width para que ocupe todo el bloque, ya que fixed lo convierte en 
+    un elemento en línea */
+    width: 100%;
+}
+
+body {
+    /* Para que desde el body baje 90px */
+    margin-top: 90px;
+}
