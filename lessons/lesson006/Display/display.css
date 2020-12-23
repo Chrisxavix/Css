@@ -1,0 +1,19 @@
+body {
+    background: rgb(12, 11, 11);
+}
+
+/* Usando inline.block me permite usar top y bottom, heigh(alto) en un elemento en línea 
+ya que un elemento en línea no puede ocupar esas propiedades sin el display */
+.inline {
+    background: brown;
+    display: inline-block;
+    margin-top: 20px;
+    height: 120px;
+    line-height: 120px;
+}
+
+/* se convierte en un elemento en línea */
+.block {
+    background: rgb(32, 75, 168);
+    display: inline;
+}
