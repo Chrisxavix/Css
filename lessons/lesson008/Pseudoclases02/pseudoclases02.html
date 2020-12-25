@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/normalize.css">
+    <link rel="stylesheet" href="pseudoclases02.css">
+</head>
+<body>
+    <h2>Cambiar color del placeholder</h2>
+    <input type="text" class="input" placeholder="hey">
+
+    <h2>Párrafos</h2>
+
+    <!-- Tengo que usar el contenedor para contar cada elemento -->
+    <div class="contaner">
+        <p class="paragraph">Parrafo 1</p>
+        <p class="paragraph">Parrafo 2</p>
+        <p class="paragraph">Parrafo 3</p>
+        <p class="paragraph">Parrafo 4</p>
+        <p class="paragraph">Parrafo 5</p>
+        <p class="paragraph">Parrafo 6</p>
+        <p class="paragraph">Parrafo 7</p>
+        <p class="paragraph">Parrafo 8</p>
+    </div>
+
+    <h2>Párrafos impares</h2>
+
+    <div class="contaner">
+        <p class="paragraph_1">Parrafo 1</p>
+        <p class="paragraph_1">Parrafo 2</p>
+        <p class="paragraph_1">Parrafo 3</p>
+        <p class="paragraph_1">Parrafo 4</p>
+        <p class="paragraph_1">Parrafo 5</p>
+        <p class="paragraph_1">Parrafo 6</p>
+        <p class="paragraph_1">Parrafo 7</p>
+        <p class="paragraph_1">Parrafo 8</p>
+    </div>
+
+    <h2>Párrafos pares</h2>
+    <h3>Usando first-child, last-child, nth-child(4)</h3>
+    <h4>Solo hijos con la misma clase</h4>
+
+    <div class="contaner">
+        <p class="paragraph_2">Parrafo 1</p>
+        <p class="paragraph_2">Parrafo 2</p>
+        <p class="paragraph_2">Parrafo 3</p>
+        <p class="paragraph_2">Parrafo 4</p>
+        <p class="paragraph_2">Parrafo 5</p>
+        <p class="paragraph_2">Parrafo 6</p>
+        <p class="paragraph_2">Parrafo 7</p>
+        <p class="paragraph_2">Parrafo 8</p>
+    </div>
+
+    <h2>Párrafos con hijos</h2>
+    <h3>Usando first-of-type, last-of-type, nth-last-of-type(4)</h3>
+    <h4>Tiene dos div como hijos, hay que ser más específicos</h4>
+
+    <div class="contaner">
+        <div>Hijo 1</div>
+        <div>Hijo 2</div>
+        <p class="paragraph_3">Parrafo 1</p>
+        <p class="paragraph_3">Parrafo 2</p>
+        <p class="paragraph_3">Parrafo 3</p>
+        <p class="paragraph_3">Parrafo 4</p>
+        <p class="paragraph_3">Parrafo 5</p>
+        <p class="paragraph_3">Parrafo 6</p>
+        <p class="paragraph_3">Parrafo 7</p>
+        <p class="paragraph_3">Parrafo 8</p>
+    </div>
+</body>
+</html>

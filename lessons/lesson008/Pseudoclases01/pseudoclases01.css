@@ -1,0 +1,62 @@
+body {
+    background-color: rgb(29, 39, 39);
+}
+
+/* Cuando el enlace no ha sido visitado */
+.link:link {
+    color: rgb(190, 172, 9);
+}
+
+/* Cuando el enlace ha sido visitado */
+.link:visited {
+    color: greenyellow;
+}
+
+/* Mientras mantengo presionado se pinta de esa manera */
+.link:active {
+    color: magenta;
+    background-color: mediumspringgreen;
+}
+
+.button1 {
+    text-decoration: none;
+    display: inline-block;
+    background: wheat;
+    height: 30px;
+    width: 90px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 20px;
+}
+
+/* Movimiento al botón */
+.button1:active {
+    transform: scale(.9) ;
+}
+
+.button2 {
+    text-decoration: none;
+    display: inline-block;
+    background: wheat;
+    height: 30px;
+    width: 90px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 20px;
+}
+
+/* Se cambia de color cuando se pasa el mouse */
+.button2:hover {
+    color: turquoise;
+    background-color: black;
+    border: 2px solid springgreen;
+}
+
+.text:hover {
+    color: blueviolet;
+}
+
+.input_test:focus {
+    background: gray;
+    color: greenyellow;
+}

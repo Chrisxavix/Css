@@ -1,0 +1,51 @@
+body {
+    background-color: rgb(29, 39, 39);
+}
+
+.input {
+    background: gray;
+    color: red;
+}
+
+.input::placeholder { 
+    color: blue; 
+
+}
+
+.contaner {
+    background: hotpink;
+}
+
+.paragraph:first-child {
+    background: grey;
+}
+
+.paragraph:last-child {
+    background: rgb(15, 82, 121);
+}
+
+.paragraph:nth-child(4) {
+    background: rgb(8, 199, 40);
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.paragraph_1:nth-child(odd) {
+    background: rgb(80, 79, 160);
+}
+
+.paragraph_2:nth-child(even) {
+    background: rgb(80, 79, 160);
+}
+
+.paragraph_3:first-of-type {
+    background: rgb(80, 79, 160);
+}
+
+.paragraph_3:last-of-type {
+    background: rgb(26, 23, 182);
+}
+
+.paragraph_3:nth-last-of-type(4) {
+    background: rgb(23, 182, 95);
+}
