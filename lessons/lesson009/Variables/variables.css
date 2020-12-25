@@ -1,0 +1,11 @@
+body{
+    background: rgb(31, 25, 31);
+}
+
+:root {
+    --color: red;
+}
+
+.paragraph {
+    color: var(--color);
+}
