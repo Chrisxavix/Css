@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(29, 40, 41);
+}
+
+/* Para resetear una lista */
+.listReset{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.list {
+    list-style-type: square;
+    
+}
+
+.list1 {
+    list-style-type: none;
+    padding-left: 10px;
+    
+}
+
+.list__item1::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 13px;
+    background-image: url(../assets/check.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+}
+
+.list2 {
+    list-style-type: none;
+}
+
+.list__item2 {
+    background-image: url(../assets/check.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+    display: block;
+    height: 20px;
+    padding-left: 25px;
+    margin-top: 20px;
+}
