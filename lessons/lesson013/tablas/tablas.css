@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(88, 78, 70);
+}
+
+.table {
+    table-layout: fixed;
+    text-align: center;
+    width: 100%;
+}
+
+.table1,  .table__data1, .table__head1 {
+    border: 1px solid steelblue;
+    border-spacing: 16px;
+}
+
+.table2 {
+    border: 1px solid steelblue;
+    table-layout: fixed;
+    text-align: center;
+    border-spacing: 16px;
+    background-image: url(../assets/cloud.jpg);
+    background-size: cover;
+}
+
+.table__data2, .table__head2 {
+    border: 1px solid steelblue;
+    border-spacing: 16px;
+}
+
+.table3 {
+    border-collapse: collapse;
+}
+
+.table3,  .table__data3, .table__head3 {
+    border: 1px solid steelblue;
+    border-spacing: 16px;
+}
+
+.table4 {
+    width: 100%;
+}
+
+.table4,  .table__data4, .table__head4 {
+    border: 1px solid steelblue;
+    border-spacing: 16px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
