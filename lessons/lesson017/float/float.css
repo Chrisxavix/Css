@@ -1,0 +1,15 @@
+body {
+    background-color: rgb(53, 51, 49);
+}
+
+.float {
+    background-color: gray;
+    border: 3px solid rgb(190, 127, 33);
+    overflow: hidden;
+}
+
+.img {
+    max-width: 30%;
+    float: right;
+    margin: 10px;
+}
