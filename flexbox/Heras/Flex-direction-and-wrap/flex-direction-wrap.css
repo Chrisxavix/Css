@@ -1,0 +1,142 @@
+body {
+    background-color: rgb(59, 57, 46);
+}
+
+.flex-container {
+    background-color: darkgray;
+    padding: 15px 0;
+    display: inline-flex;
+}
+
+.flex__item {
+    background-color: darkorchid;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    color: rgb(37, 3, 3);
+    margin: 12px;
+    text-align: center;
+}
+
+.span {
+    font-size: 30px;
+    color: white;
+}
+
+/* Next 01 */
+
+.flex-container1 {
+    background-color: darkgray;
+    padding: 15px 0;
+    display: flex;
+}
+
+.flex__item1 {
+    background-color: darkorchid;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    color: rgb(37, 3, 3);
+    margin: 12px;
+    text-align: center;
+}
+
+.span1 {
+    font-size: 30px;
+    color: white;
+}
+
+/* Next 02 */
+
+.flex-container2 {
+    background-color: darkgray;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.flex__item2 {
+    background-color: darkorchid;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    color: rgb(37, 3, 3);
+    margin: 12px;
+    text-align: center;
+}
+
+/* Next 03 */
+
+.flex-container3 {
+    background-color: darkgray;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex__item3 {
+    background-color: darkorchid;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    color: rgb(37, 3, 3);
+    margin: 12px;
+    text-align: center;
+}
+
+/* Next 04 */
+
+.flex-container4 {
+    background-color: darkgray;
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.flex__item4 {
+    background-color: darkorchid;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    color: rgb(37, 3, 3);
+    margin: 12px;
+    text-align: center;
+}
+
+/* Next 05 */
+
+.flex-container5 {
+    background-color: darkgray;
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex__item5 {
+    background-color: darkorchid;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    color: rgb(37, 3, 3);
+    margin: 12px;
+    text-align: center;
+}
+
+/* Next 06 */
+
+.flex-container6 {
+    background-color: darkgray;
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.flex__item6 {
+    background-color: darkorchid;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    color: rgb(37, 3, 3);
+    margin: 12px;
+    text-align: center;
+}
