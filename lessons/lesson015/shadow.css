@@ -1,0 +1,33 @@
+body {
+    background-color: rgb(53, 49, 49);
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: gray;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid black;
+    margin-top: 90px;
+    /* No empuja a los demás, el borde sí 
+    Tener claro las comas */
+    box-shadow: 0 0 0 10px green,
+                0 0 0 23px blue,
+                0 0 0 35px rgb(211, 203, 203);
+}
+.box:hover {
+    box-shadow: 0 0 0 10px rgb(240, 224, 4),
+                0 0 0 23px rgb(6, 66, 231),
+                0 0 0 35px rgb(168, 7, 7);
+}
+
+.title {
+    text-align: center;
+    margin-top: 90px;
+    text-shadow: 3px 3px 3px rgb(206, 169, 169);
+}
+
+.title:hover {
+    text-shadow: 3px 3px 3px rgb(21, 201, 21);
+}
