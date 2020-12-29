@@ -1,0 +1,138 @@
+body {
+    background-color: rgb(46, 44, 44);
+}
+
+/* New */
+.flex__container {
+    background-color: darkgray;
+    height: 100px;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.flex__item {
+    background-color: darkorchid;
+    height: 50px;
+    width: 50px;
+    line-height: 30px;
+    color: rgb(37, 3, 3);
+    margin: 12px;
+    text-align: center;
+}
+
+/* Next 1 */
+.flex__container1 {
+    background-color: darkgray;
+    height: 100px;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex__item1 {
+    background-color: darkorchid;
+    height: 50px;
+    width: 50px;
+    line-height: 30px;
+    color: rgb(37, 3, 3);
+    margin: 12px;
+    text-align: center;
+}
+
+/* Next 2 */
+.flex__container2 {
+    background-color: darkgray;
+    height: 100px;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flex__item2 {
+    background-color: darkorchid;
+    height: 50px;
+    width: 50px;
+    line-height: 30px;
+    color: rgb(37, 3, 3);
+    text-align: center;
+}
+
+/* Next 3 */
+.flex__container3 {
+    background-color: rgb(141, 86, 86);
+    height: 200px;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.flex__item3 {
+    background-color: darkorchid;
+    height: 50px;
+    width: 50px;
+    line-height: 30px;
+    margin: 12px;
+    color: rgb(37, 3, 3);
+    text-align: center;
+}
+
+/* Next 4 */
+.flex__container4 {
+    background-color: darkgray;
+    height: 400px;
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.flex__item4 {
+    background-color: darkorchid;
+    height: 50px;
+    width: 50px;
+    line-height: 30px;
+    margin: 12px;
+    color: rgb(37, 3, 3);
+    text-align: center;
+}
+
+/* Next 5 */
+.flex__container5 {
+    background-color: darkgray;
+    height: 400px;
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.flex__item5 {
+    background-color: darkorchid;
+    height: 50px;
+    width: 50px;
+    line-height: 30px;
+    margin: 12px;
+    color: rgb(37, 3, 3);
+    text-align: center;
+}
+
+/* Next 6 */
+
+.flex__container6 {
+    background-color: rgb(141, 86, 86);
+    height: 200px;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex__item6 {
+    background-color: darkorchid;
+    height: 50px;
+    width: 50px;
+    line-height: 30px;
+    color: rgb(37, 3, 3);
+    text-align: center;
+}
