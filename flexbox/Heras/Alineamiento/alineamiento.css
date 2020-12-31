@@ -136,3 +136,43 @@ body {
     color: rgb(37, 3, 3);
     text-align: center;
 }
+
+/* Next 7 */
+
+.flex__container7 {
+    background-color: rgb(141, 86, 86);
+    height: 400px;
+    padding: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex__item7 {
+    background-color: darkorchid;
+    height: 50px;
+    width: 50px;
+    line-height: 30px;
+    color: rgb(37, 3, 3);
+    text-align: center;
+    margin: 15px;
+}
+
+/* Next 8 */
+
+.box {
+    border: 5px solid rgb(194, 25, 25);
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+    max-width: 25%;
+}
+
+.paragraph {
+    margin-right: 10px;
+    background-color: aquamarine;
+}
