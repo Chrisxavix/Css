@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/normalize.css">
+    <link rel="stylesheet" href="minMax-autoFill-autoFit.css">
+</head>
+<body>
+    <h2>Con grid-template-columns: repeat(3, minmax(min-content, 1fr));</h2>
+    <h3>Se rompe la cadena</h3>
+    <div class="main-container">
+        <div class="grid-container">
+            <div class="grid-item">A Lorem ipsum dolor sit.</div>
+            <div class="grid-item">B</div>
+            <div class="grid-item">C</div>
+            <div class="grid-item">D</div>
+            <div class="grid-item">E</div>
+            <div class="grid-item">F</div>
+        </div>
+    </div>
+
+    <h2>Con grid-template-columns: repeat(3, minmax(max-content, 1fr));</h2>
+    <h3>No se rompe la cadena</h3>
+    <div class="main-container1">
+        <div class="grid-container1">
+            <div class="grid-item1">A Lorem ipsum dolor sit.</div>
+            <div class="grid-item1">B</div>
+            <div class="grid-item1">C</div>
+            <div class="grid-item1">D</div>
+            <div class="grid-item1">E</div>
+            <div class="grid-item1">F</div>
+        </div>
+    </div>
+
+    <h2>Con auto-fill se cread más celdas y ocupan el espacio designado.</h2>
+    <h3>grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));</h3>
+    <div class="main-container2">
+        <div class="grid-container2">
+            <div class="grid-item2">A</div>
+            <div class="grid-item2">B</div>
+            <div class="grid-item2">C</div>
+            <div class="grid-item2">D</div>
+        </div>
+    </div>
+
+    <h2>Con auto-fit ocupa el contenedor de 100%, pero cuando se reduce la pantalla se quedará en el ancho desigando</h2>
+    <h3>grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));</h3>
+    <div class="main-container3">
+        <div class="grid-container3">
+            <div class="grid-item3">A</div>
+            <div class="grid-item3">B</div>
+            <div class="grid-item3">C</div>
+            <div class="grid-item3">D</div>
+        </div>
+    </div>
+</body>
+</html>
