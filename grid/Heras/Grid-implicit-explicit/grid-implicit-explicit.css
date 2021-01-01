@@ -2,9 +2,7 @@ body {
     font-family: sans-serif;
     background-image: radial-gradient(circle, #b677db, #4b2a68);
     color: #eee;
-    background-repeat: no-repeat;
 }
-
 
 /* New 1 */
 
@@ -15,11 +13,12 @@ body {
     margin: 0;
     font-family: sans-serif;
     color: #eee;
+    overflow: hidden;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 100px);
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 100px);
 }
 
@@ -41,12 +40,13 @@ body {
     margin: 0;
     font-family: sans-serif;
     color: #eee;
+    overflow: hidden;
 }
 
 .grid-container1 {
     display: grid;
-    grid-template-columns: 70px repeat(3, 50px) 70px;
-    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 100px);
 }
 
 .grid-item1 {
