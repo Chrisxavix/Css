@@ -1,0 +1,56 @@
+body {
+    background-color: rgb(34, 31, 28);
+    color: #fff;
+}
+
+.box {
+    background-color: rgb(147, 95, 160);
+}
+
+.h1 {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(201, 151, 14);
+}
+
+/* New 1 */
+
+.container {
+    height: 120px;
+    background-color: blueviolet;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.item {
+    border: 1px solid black;
+    background-color: cadetblue;
+}
+
+.item:nth-child(2) {
+    order: 1;
+}
+
+.item:nth-child(5) {
+    order: 2;
+}
+
+/* New 2 */
+
+.container1 {
+    height: 120px;
+    background-color: blueviolet;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.item1 {
+    border: 1px solid black;
+    background-color: cadetblue;
+}
+
+.item1:nth-child(3) {
+    align-self: flex-start;
+}

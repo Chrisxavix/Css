@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/normalize.css">
+    <link rel="stylesheet" href="order-and-align-self.css">
+</head>
+<body>
+    <h1 class="h1">Order</h1>
+    <div class="box">
+        <h2>Representa el orden de las cajas</h2>
+    </div>
+
+    <h3>Se mueven declarando la clase: .item:nth-child(2) {order: 1;}</h3>
+    <h4>Se va al final, porque los demás tienen order:0, mientras que la caja 2 tiene order:1</h4>
+    <h4>La caja 5 se va después del Item2, porque tiene order: 2;</h4>
+    <section class="container">
+        <article class="item">Flex Item 1</article>
+        <article class="item">Flex Item 2</article>
+        <article class="item">Flex Item 3</article>
+        <article class="item">Flex Item 4</article>
+        <article class="item">Flex Item 5</article>
+    </section>
+
+    <h1 class="h1">Align self</h1>
+    <div class="box">
+        <h2>Sobreescribe el valor de align-item</h2>
+    </div>
+
+    <h3>Solo trabaja con el hijo seleccionado: .item1:nth-child(3) { align-self: flex-start; }</h3>
+    <section class="container1">
+        <article class="item1">Flex Item 1</article>
+        <article class="item1">Flex Item 2</article>
+        <article class="item1">Flex Item 3</article>
+        <article class="item1">Flex Item 4</article>
+        <article class="item1">Flex Item 5</article>
+    </section>
+</body>
+</html>
