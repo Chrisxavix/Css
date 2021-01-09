@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(34, 31, 28);
+    color: #fff;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.box {
+    background-color: rgb(147, 95, 160);
+}
+
+.h1 {
+    text-align: center;
+    font-size: 50px;
+    color: rgb(201, 151, 14);
+}
+
+.titulos {
+    background-color: rgb(68, 59, 10);
+    font-size: 22px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+
+main {
+    flex-grow: 1;
+}
