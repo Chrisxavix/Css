@@ -1,0 +1,69 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.titulares {
+    /* Para que se acople a la caja el nav, no dar medidas aquí, y así cuando agregue varios items de (il) no 
+    perderá el diseño */
+    background-color: rgb(68, 59, 10);
+    color: #EEE;
+}
+
+.header {
+    background-color: red;
+}
+
+.logo {
+    background-color: blue;
+}
+
+.menu ul{
+    list-style: none;
+    /* Para quitar los espacios de los items de lista, el padding, margin */
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    /* Para dar espacios entre los items de lista en vertical */
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+/* Centrado de la caja con el logo e items del nav */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Para las pantallas grandes */
+@media screen and (min-width: 1024px) {
+    .header {
+        display: flex;
+        /* Cuando sea pantalla grande se cambia a fila */
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: rgb(161, 42, 165);
+    }
+
+    .logo {
+        background-color: rgb(0, 195, 255);
+    }
+
+    .menu ul{
+        display: flex;
+    }
+ 
+    /* Para dar espacios entre los items */
+    .menu li {
+        margin-left: 50px;
+    }
+}
