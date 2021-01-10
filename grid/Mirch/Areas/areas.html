@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/normalize.css">
+    <link rel="stylesheet" href="areas.css">
+</head>
+<body>
+    <div class="box">
+        <h1>Grid Areas</h1>
+        <h2>Se definen por secciones y con nombres que se asigna.</h2>
+        <h3>Declaradas con: <br>grid-template-areas: <br>"header header" <br>"content sidebar" <br>"footer footer"; </h3>
+        <br>
+        <h2>Luego por cada sección, se le da el nombre a la clase declarada en el html, como: <br>item header, <br>item content, <br>item sidebar, <br>itemm footer</h2>
+        <h3>En la hoja de estilos iría: <br>
+        .header { grid-area: header; } <br>
+        .content { grid-area: content; } <br>
+        .footer { grid-area: footer; } <br>
+        .sidebar { grid-area: sidebar; }</h3>
+
+        <h2>Para dejar una area vacia se crea una nueva fila y se le asigna con un punto, entonces no se va a pintar la celda.</h2>
+    </div>
+
+    <div class="grid__container grid__areas">
+        <header class="item header">
+            <p>Header</p>
+        </header>
+    
+        <div class="item content">
+            <p>Content</p>
+        </div>
+    
+        <aside class="item sidebar">
+            <p>Sider Bar</p>
+        </aside>
+    
+        <footer class="item footer">
+            <p>Footer</p>
+        </footer>
+    </div>
+    
+</body>
+</html>
