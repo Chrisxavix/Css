@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/normalize.css">
+    <link rel="stylesheet" href="posicionamiento.css">
+</head>
+<body>
+    <div class="box">
+        <h1>Posicionamiento</h1>
+        <h2>Para el posicionamiento se enfoca en la celda con: <br>.grid__item:nth-child(?) { }</h2>
+        <h3>Dentro de la clase del item seleccionado, se usa los valores por fila y columna: <br>Fila: Se le asigna un valor inicial y final por línea. <br>grid-row-start: ?; <br>grid-row-end: ?; <br> <br>Para recotar código se le puede usar de esta manera: <br>grid-row: 2/4 <br><br>Columan: la misma lógica que por filas: <br>grid-column-start: ?; <br>grid-column-end: ?; <br> <br>Para recotar código se le puede usar de esta manera: <br>grid-column: 2/4 </h3> 
+        <h2>Ejemplo con la celda 7:</h2>
+        <h3>.grid__item:nth-child(7) { <br>color: red; <br>grid-column-start: 2; <br>grid-column-end: 4; <br>   grid-row-start: 2; <br>grid-row-end: 4; <br>} <br></h3>
+    </div>
+    <div class="grid__container grid-explicit">
+        <div class="grid__item"><p>Grid Item 1</p></div>
+        <div class="grid__item"><p>Grid Item 2</p></div>
+        <div class="grid__item"><p>Grid Item 3</p></div>
+        <div class="grid__item"><p>Grid Item 4</p></div>
+        <div class="grid__item"><p>Grid Item 5</p></div>
+        <div class="grid__item"><p>Grid Item 6</p></div>
+        <div class="grid__item"><p>Grid Item 7</p></div>
+        <div class="grid__item"><p>Grid Item 8</p></div>
+        <div class="grid__item"><p>Grid Item 9</p></div>
+        <div class="grid__item"><p>Grid Item 10</p></div>
+        <div class="grid__item"><p>Grid Item 11</p></div>
+        <div class="grid__item"><p>Grid Item 12</p></div>
+        <div class="grid__item"><p>Grid Item 13</p></div>
+        <div class="grid__item"><p>Grid Item 14</p></div>
+        <div class="grid__item"><p>Grid Item 15</p></div>
+        <div class="grid__item"><p>Grid Item 16</p></div>
+        <div class="grid__item"><p>Grid Item 17</p></div>
+        <div class="grid__item"><p>Grid Item 18</p></div>
+        <div class="grid__item"><p>Grid Item 19</p></div>
+    </div>
+</body>
+</html>
