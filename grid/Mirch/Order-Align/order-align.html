@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/normalize.css">
+    <link rel="stylesheet" href="order-align.css">
+</head>
+<body>
+    <div class="box">
+        <h1>Grid Order</h1>
+        <h2>Por defecto el ordenamiento lo trae en: <br> order: 0;</h2>
+        <h3>Para cambiar el orden se entra en el item hijo, y se asigna el valor de 1 en adelante para posicionar: </h3>
+        <h4>Hijo 3: <br>.grid__item:nth-child(3) { <br>background-color: red; <br>order: 1; <br> } <br></h4>
+        <h4>Hijo 2: <br>.grid__item:nth-child(2) { <br>background-color: blue; <br>order: 2; <br> } <br></h4>
+    </div>
+
+    <div class="grid__container grid__order">
+        <div class="grid__item"><p>Grid Item 1</p></div>
+        <div class="grid__item"><p>Grid Item 2</p></div>
+        <div class="grid__item"><p>Grid Item 3</p></div>
+        <div class="grid__item"><p>Grid Item 4</p></div>
+        <div class="grid__item"><p>Grid Item 5</p></div>
+    </div>
+
+    <div class="box">
+        <h1>Grid Align - justify-items:</h1>
+        <h2>Mirar desde INSPECCIONAR ELEMENTOS</h2>
+        <h2>Alinear de manera horizontal</h2>
+        <h2>Usando en la clase contenedora/padre de grid__align <br>justify-items: center;</h2>
+        <h2>Puede ser: justify-items: center; / start / end</h2>
+    </div>
+
+    <div class="grid__container1 grid__align">
+        <div class="grid__item1"><p>Grid Item 1</p></div>
+        <div class="grid__item1"><p>Grid Item 2</p></div>
+        <div class="grid__item1"><p>Grid Item 3</p></div>
+        <div class="grid__item1"><p>Grid Item 4</p></div>
+        <div class="grid__item1"><p>Grid Item 5</p></div>
+    </div>
+
+    <div class="box">
+        <h1>Grid Align - align-items:</h1>
+        <h2>Mirar desde INSPECCIONAR ELEMENTOS</h2>
+        <h2>Alinear de manera vertical</h2>
+        <h2>Usando en la clase contenedora/padre de grid__align <br>align-items: center;</h2>
+        <h2>Puede ser: align-items: center; / start / end</h2>
+    </div>
+
+    <div class="grid__container2 grid__align2">
+        <div class="grid__item2"><p>Grid Item 1</p></div>
+        <div class="grid__item2"><p>Grid Item 2</p></div>
+        <div class="grid__item2"><p>Grid Item 3</p></div>
+        <div class="grid__item2"><p>Grid Item 4</p></div>
+        <div class="grid__item2"><p>Grid Item 5</p></div>
+    </div>
+
+    <div class="box">
+        <h1>Grid Align - align-items and justify-items:</h1>
+        <h2>Mirar desde INSPECCIONAR ELEMENTOS</h2>
+        <h2>Alinear de manera vertical y horizontal</h2>
+        <h3>Ejemplo: <br>.grid__align3 {<br>display: grid;<br>grid-template-columns: repeat(3, 200px);<br>grid-template-rows: repeat(2, 200px);<br>align-items: center;<br>justify-items: center;<br>}br</h3>
+    </div>
+
+    <div class="grid__container3 grid__align3">
+        <div class="grid__item3"><p>Grid Item 1</p></div>
+        <div class="grid__item3"><p>Grid Item 2</p></div>
+        <div class="grid__item3"><p>Grid Item 3</p></div>
+        <div class="grid__item3"><p>Grid Item 4</p></div>
+        <div class="grid__item3"><p>Grid Item 5</p></div>
+    </div>
+
+    <div class="box">
+        <h1>Alineando un hijo</h1>
+        <h2>Mirar desde INSPECCIONAR ELEMENTOS</h2>
+        <h3>Se realiza con las mismas propiedades que el padre, pero en vez de (align/justify)-ITEMS, va (align/justify)-SELF.</h3>
+        <h3>Ejemplo: <br> .grid__item4:nth-child(5) { <br> padding: 1%; <br> font-size: 1.25rem; <br>
+            background-color: #666; <br> border: 2px solid #999; <br> align-self: end; <br> justify-self: center; <br>} <br></h3>
+    </div>
+
+    <div class="grid__container4 grid__align4">
+        <div class="grid__item4"><p>Grid Item 1</p></div>
+        <div class="grid__item4"><p>Grid Item 2</p></div>
+        <div class="grid__item4"><p>Grid Item 3</p></div>
+        <div class="grid__item4"><p>Grid Item 4</p></div>
+        <div class="grid__item4"><p>Grid Item 5</p></div>
+    </div>
+</body>
+</html>
