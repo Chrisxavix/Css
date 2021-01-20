@@ -7,6 +7,8 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+
+/* Con box-sizing: border-box; dará exactamente el tamaño que se asigne a la caja, ejemplo with: 100px;, así ponga margin, padding, no pasara de 100px, en cambio si no pongo, pasará de 100px. */
 *,
 *::after,
 *::before {
@@ -154,7 +156,7 @@ sup {
  */
 
 img {
-  border-style: none;
+  max-width: 100%;
 }
 
 /* Forms
