@@ -1,19 +1,43 @@
 body {
-    background-color: rgb(17, 11, 22);
+    background-image: radial-gradient(rgb(189, 180, 180), rgb(69, 100, 104));
+    background-repeat: no-repeat;
+    height: auto;
 }
 
-h1 {
-    color: rgb(204, 156, 25);
+.title {
+    text-align:center;
+    color:rgb(204, 156, 25);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 45px;
+    letter-spacing: 5px;
+    text-shadow: -1px -1px 1px #01010c, 1px -1px 1px #01010c, -1px 1px 1px #01010c, 1px 1px 1px #01010c;
 }
 
-h2 {
-    color: rgb(165, 136, 42);
+.subtitle {
+    color: black;
+    text-align: center;
 }
 
-li {
-    margin-top: 6px;
+.main-container {
+    border: 1px solid black;
+    width: 90%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
-a {
-  color: #fff;
+.link {
+    display: block;
+    font-size: 25px;
+    color: rgb(97, 43, 12);
+    text-decoration: none;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    text-shadow: -0.2px -0.2px 0.2px #01010c, 0.2px -0.2px 0.2px #01010c, -0.2px 0.2px 0.2px #01010c, 0.2px 0.2px 0.2px #01010c;
+}
+
+.link:hover {
+    color: rgb(245, 239, 239);
+    text-shadow: -0.2px -0.2px 0.2px #efeff5, 0.2px -0.2px 0.2px #efeff5, -0.2px 0.2px 0.2px #efeff5, 0.2px 0.2px 0.2px #efeff5;
 }
