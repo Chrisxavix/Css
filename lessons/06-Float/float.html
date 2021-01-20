@@ -3,15 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Float</title>
+    <link rel="shortcut icon" href="/assets/css.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style/reset.css">
     <link rel="stylesheet" href="float.css">
 </head>
 <body>
-    <!-- Sin normalize -->
+    <h1 class="itemTitle">Float</h1>
+    <!-- ------------ Alinear una imagen con un texto con float ------------  -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">Alinear una imagen con un texto con float.</h3>
+        <h4 class="itemInfo__subtitle">En el contenedor se usa:</h4>
+        <h5 class="itemInfo__example">
+            .float {<br>
+                margin-top: 20px;<br>
+                background-color: gray;<br>
+                border: 3px solid rgb(190, 127, 33);<br>
+                overflow: hidden;<br>
+            }<br>
+        </h5>
+
+        <h4 class="itemInfo__subtitle">En la imagen:</h4>
+        <h5 class="itemInfo__example">
+            .img {<br>
+                max-width: 30%;<br>
+                float: right;<br>
+                margin: 40px 10px;<br>
+            }<br>
+        </h5>
+    </div>
+   
     <article class="float">
-        <img src="../assets/forest.jpg" alt="" class="img">
-        <h3>Hey</h3>
+        <img src="./assets/forest.jpg" alt="" class="img">
+        <h3>Title</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam vel fugit nihil eos, ea beatae possimus eum, alias officiis in, magnam soluta! Saepe expedita quos dolor culpa, veniam modi magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam vel fugit nihil eos, ea beatae possimus eum, alias officiis in, magnam soluta! Saepe expedita quos dolor culpa, veniam modi magnam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam vel fugit nihil eos, ea beatae possimus eum, alias officiis in, magnam soluta! Saepe expedita quos dolor culpa, veniam modi magnam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus perferendis vitae unde neque nulla corrupti nihil consequuntur odit tempore, maxime harum tempora asperiores? Aut asperiores iure consectetur illum iste distinctio quos sapiente labore dolorum a quia suscipit, sunt voluptatum aliquid.</p>
     </article>
+    <!-- ------------ Alinear una imagen con un texto con float ------------  -->
 </body>
 </html>
