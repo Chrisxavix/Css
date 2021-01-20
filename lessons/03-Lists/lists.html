@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+    <link rel="shortcut icon" href="/assets/css.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style/reset.css">
+    <link rel="stylesheet" href="lists.css">
+</head>
+<body>
+    <h1 class="itemTitle">Lists</h1>
+    <!-- ------------ Enumeración de las listas ------------  -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">Estilos de numeración con las listas</h3>
+        <h4 class="itemInfo__subtitle">Existen diversos, como: disc, circle, square, decimal, decimal-leading-zero, lower-roman, upper-roman, lower-greek, lower-latin, upper-latin,           armenian, georgian, lower-alpha, upper-alpha, none</h4>
+        <h4 class="itemInfo__subtitle">Usando:</h4>
+        <h5 class="itemInfo__example">
+            .list {<br>
+                list-style-type: decimal-leading-zero;<br>
+            }<br>
+        </h5>
+    </div>
+
+    <ul class="list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+    <!-- ------------ Enumeración de las listas ------------  -->
+    
+    <!-- ------------ Formateo de una lista ------------  -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">Reseteo de una lista</h3>
+        <h4 class="itemInfo__subtitle">Usando:</h4>
+        <h5 class="itemInfo__example">
+            .listReset{<br>
+                margin-top: 0;<br>
+                margin-bottom: 0;<br>
+                padding-left: 0;<br>
+                list-style: none;<br>
+            }<br>
+        </h5>
+    </div>
+
+    <ul class="listReset">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+    <!-- ------------ Formateo de una lista ------------  -->
+
+    <!-- ------------ Listado con Imágenes ------------  -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">Listado con una imagen personalizada</h3>
+        <h4 class="itemInfo__subtitle">Primero se resetea la clase contenedora</h4>
+        <h4 class="itemInfo__subtitle">Usando:</h4>
+        <h5 class="itemInfo__example">
+            .listImage {<br>
+                list-style-type: none;<br>
+            }<br>
+        </h5>
+
+
+        <h4 class="itemInfo__subtitle">Darle estilos a los items de la clase contenedora</h4>
+        <h4 class="itemInfo__subtitle">Usando:</h4>
+        <h5 class="itemInfo__example">
+            .listImage__item {<br>
+                background-image: url(./assets/check.png);<br>
+                background-repeat: no-repeat;<br>
+                background-position: 0 0;<br>
+                background-size: contain;<br>
+                display: block;<br>
+                height: 20px;<br>
+                padding-left: 25px;<br>
+                margin-top: 20px;<br>
+            }<br>
+        </h5>
+    </div>
+    
+    <ul class="listImage">
+        <li class="listImage__item">Item 1</li>
+        <li class="listImage__item">Item 2</li>
+        <li class="listImage__item">Item 3</li>
+        <li class="listImage__item">Item 4</li>
+        <li class="listImage__item">Item 5</li>
+    </ul>
+    <!-- ------------ Listado con Imágenes ------------  -->
+</body>
+</html>
