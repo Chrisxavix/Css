@@ -1,0 +1,73 @@
+/* **************************** ITEM DESIGN **************************** */
+body {
+    background-image: radial-gradient(rgb(189, 180, 180), rgb(103, 104, 59));
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.itemTitle {
+    text-align:center;
+    color:rgb(204, 156, 25);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    letter-spacing: 5px;
+    text-shadow: -1px -1px 1px #01010c, 1px -1px 1px #01010c, -1px 1px 1px #01010c, 1px 1px 1px #01010c;
+}
+
+.itemSubTitle {
+    margin-top: 10px;
+    text-align:center;
+    font-size: 20px;
+    color: rgb(39, 36, 36);    
+}
+
+.itemInfo {
+    margin-top: 24px;
+    background-color: #09092c;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.itemInfo__title {
+    color: #fff;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.itemInfo__subtitle {
+    margin-top: 5px;
+    color: rgb(150, 140, 140);
+    font-size: 15px;
+    margin: 5px 10px;
+}
+
+.itemInfo__example {
+    margin-top: 5px;
+    color: rgb(84, 143, 66);
+    font-size: 15px;
+    margin: 0 10px;
+}
+/* **************************** ITEM DESIGN **************************** */
+/* ------------ Sombra a la derecha ------------ */
+.title {
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: 3px 3px 3px rgb(230, 5, 5);
+}
+
+.title:hover {
+    text-shadow: 3px 3px 3px rgb(21, 201, 21);
+}
+/* ------------ Sombra a la derecha ------------ */
+
+/* ------------ Sombra a la izquierda ------------ */
+.title1 {
+    text-align: center;
+    margin-top: 20px;
+    text-shadow: -3px -3px 3px rgb(206, 169, 169);
+}
+
+.title1:hover {
+    text-shadow: -3px -3px 3px rgb(11, 110, 175);
+}
+/* ------------ Sombra a la izquierda ------------ */
