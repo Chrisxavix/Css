@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="shortcut icon" href="/assets/css.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style/reset.css">
+    <link rel="stylesheet" href="tables.css">
+</head>
+<body>
+    <h1 class="itemTitle">Tables</h1>
+    <!-- ------------ Tabla Centrada con items centrados ------------  -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">Tabla centrada</h3>
+        <h4 class="itemInfo__subtitle">Usando:</h4>
+        <h5 class="itemInfo__example">
+            .table {<br>
+                margin: 20px 0;<br>
+                table-layout: auto;<br>
+                text-align: center; | right | left | Centrar los items<br>
+                width: 80%;<br>
+                background-color: rgb(93, 95, 94);<br>
+                margin-right: auto;<br>
+                margin-left: auto;<br>
+                border: 1px solid steelblue;<br>
+            }
+        </h5>
+
+        <h3 class="itemInfo__title">Alineando a la izquierda la primera columna</h3>
+        <h4 class="itemInfo__subtitle">Usando:</h4>
+        <h5 class="itemInfo__example">
+            .table__head { <br>
+                border: 1px solid steelblue; <br>
+                text-align: right; | center | left | Alinear items <br>
+            } <br>
+        </h5>
+    </div>
+
+    <table class="table">
+        <thead>
+            <th class="table__head">Username</th>
+            <th class="table__head">Email</th>
+            <th class="table__head">Company</th>
+        </thead>
+        <tbody>
+            <tr class="table__row">
+                <td class="table__data">TonyStark</td>
+                <td class="table__data">tonystark@gmail.com</td>
+                <td class="table__data">Marvel</td>
+            </tr>
+
+            <tr class="table__row">
+                <td class="table__data">Bruce Banner</td>
+                <td class="table__data">brucebanner@gmail.com</td>
+                <td class="table__data">Marvel</td>
+            </tr>
+
+            <tr class="table__row">
+                <td class="table__data">PeterParker</td>
+                <td class="table__data">spiderman@gmail.com</td>
+                <td class="table__data">Marvel</td>
+            </tr>
+
+            <tr class="table__row">
+                <td class="table__data">Hulk</td>
+                <td class="table__data">hulk@gmail.com</td>
+                <td class="table__data">Marvel</td>
+            </tr>
+
+            <tr class="table__row">
+                <td class="table__data">SteveRogers</td>
+                <td class="table__data"></td>
+                <td class="table__data">Marvel</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- ------------ Tabla Centrada con items centrados ------------  -->
+
+    <!-- ------------ Tabla con una imagen de fondo ------------  -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">Tabla con una imagen de fondo</h3>
+        <h4 class="itemInfo__subtitle">Usando:</h4>
+        <h5 class="itemInfo__example">
+            .table1 { <br>
+                margin: 20px 0;<br>
+                table-layout: auto;<br>
+                text-align: center;<br>
+                width: 80%;<br>
+                background-image: url(./assets/cloud.jpg);<br>
+                background-size: cover;<br>
+                margin-right: auto;<br>
+                margin-left: auto;<br>
+                border: 1px solid black;<br>
+                border-spacing: 16px;<br>
+            }<br>
+        </h5>
+    </div>
+
+    <table class="table1">
+        <thead>
+            <th class="table__head1">Username</th>
+            <th class="table__head1">Email</th>
+            <th class="table__head1">Company</th>
+        </thead>
+        <tbody>
+            <tr class="table__row1">
+                <td class="table__data1">TonyStark</td>
+                <td class="table__data1">tonystark@gmail.com</td>
+                <td class="table__data1">Marvel</td>
+            </tr>
+
+            <tr class="table__row1">
+                <td class="table__data1">Bruce Banner</td>
+                <td class="table__data1">brucebanner@gmail.com</td>
+                <td class="table__data1">Marvel</td>
+            </tr>
+
+            <tr class="table__row1">
+                <td class="table__data1">PeterParker</td>
+                <td class="table__data1">spiderman@gmail.com</td>
+                <td class="table__data1">Marvel</td>
+            </tr>
+
+            <tr class="table__row1">
+                <td class="table__data1">Hulk</td>
+                <td class="table__data1">hulk@gmail.com</td>
+                <td class="table__data1">Marvel</td>
+            </tr>
+
+            <tr class="table__row1">
+                <td class="table__data1">SteveRogers</td>
+                <td class="table__data1"></td>
+                <td class="table__data1">Marvel</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- ------------ Tabla con una imagen de fondo ------------  -->
+
+    <!-- ------------ Tabla con deslizador para pantallas móviles ------------  -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">Tabla con deslizador para pantallas móviles</h3>
+        <h4 class="itemInfo__subtitle">Hace que aparezca un scroll en la tabla cuando es pequeña la pantalla, agregando un contenedor a la tabla</h4>
+        <h4 class="itemInfo__subtitle">Usando:</h4>
+        <h5 class="itemInfo__example">
+            .table-container { <br>
+                overflow-x: auto;<br>
+            }<br>
+        </h5>
+    </div>
+
+    <div class="table-container">
+        <table class="table2"> 
+            <thead>
+                <th class="table__head2">Username</th>
+                <th class="table__head2">Email</th>
+                <th class="table__head2">Company</th>
+            </thead>
+            <tbody>
+                <tr class="table__row2">
+                    <td class="table__data2">TonyStark</td>
+                    <td class="table__data2">tonystark@gmail.com</td>
+                    <td class="table__data2">Marvel</td>
+                </tr>
+
+                <tr class="table__row2">
+                    <td class="table__data2">Bruce Banner</td>
+                    <td class="table__data2">brucebanner@gmail.com</td>
+                    <td class="table__data2">Marvel</td>
+                </tr>
+
+                <tr class="table__row2">
+                    <td class="table__data2">PeterParker</td>
+                    <td class="table__data2">spiderman@gmail.com</td>
+                    <td class="table__data2">Marvel</td>
+                </tr>
+
+                <tr class="table__row2">
+                    <td class="table__data2">Hulk</td>
+                    <td class="table__data2">hulk@gmail.com</td>
+                    <td class="table__data2">Marvel</td>
+                </tr>
+
+                <tr class="table__row2">
+                    <td class="table__data2">SteveRogers</td>
+                    <td class="table__data2"></td>
+                    <td class="table__data2">Marvel</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- ------------ Tabla con deslizador para pantallas móviles ------------  -->
+
+    <!-- ------------ Tabla con una celda que incluye imagen y texto, usando display: flex ------------  -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">Tabla con una celda que incluye imagen y texto, usando display: flex</h3>
+        <h4 class="itemInfo__subtitle">Usamos un contenedor con hijos (imagen | texto) para darle flex a la celda donde se requiere acomodar</h4>
+        <h4 class="itemInfo__subtitle">Usando:</h4>
+        <h5 class="itemInfo__example">
+            .containerFlex {<br>
+                display: flex;<br>
+                align-items: center;<br>
+                justify-content: center;<br>
+                margin: 5px;<br>
+            }<br>
+        </h5>
+    </div>
+
+    <div class="table-container1">
+        <table class="table3">
+            <thead>
+                <th class="table__head3">Username</th>
+                <th class="table__head3">Email</th>
+                <th class="table__head3">Company</th>
+            </thead>
+            <tbody>
+                <tr class="table__row3">
+                    <td class="table__data3">TonyStark</td>
+                    <td class="table__data3">tonystark@gmail.com</td>
+                    <td class="table__data3">Marvel</td>
+                </tr>
+
+                <tr class="table__row3">
+                    <td class="table__data3">Bruce Banner</td>
+                    <td class="table__data3">brucebanner@gmail.com</td>
+                    <td class="table__data3">Marvel</td>
+                </tr>
+
+                <tr class="table__row3">
+                    <td class="table__data3">PeterParker</td>
+                    <td class="table__data3">spiderman@gmail.com</td>
+                    <td class="table__data3">Marvel</td>
+                </tr>
+
+                <tr class="table__row3">
+                    <td class="table__data3">Hulk</td>
+                    <td class="table__data3">hulk@gmail.com</td>
+                    <td class="table__data3">Marvel</td>
+                </tr>
+
+                <tr class="table__row3">
+                    <td class="table__data3">SteveRogers</td>
+                    <td class="table__data3">
+                        <div class="containerFlex">
+                            <img src="./assets/cat.jpg" alt="" class="imgFlex">
+                            <label class="textFlex">Maggot, el chido</label>
+                        </div>
+                    </td>
+                    <td class="table__data3">Marvel</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- ------------ Tabla con una celda que incluye imagen y texto, usando display: flex ------------  -->
+</body>
+</html>
