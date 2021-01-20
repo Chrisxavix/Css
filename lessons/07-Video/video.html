@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <link rel="shortcut icon" href="/assets/css.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style/reset.css">
+    <link rel="stylesheet" href="video.css">
+</head>
+<body>
+    <h1 class="itemTitle">Lists</h1>
+    <!-- ------------ Video ------------  -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">Video</h3>
+        <h4 class="itemInfo__subtitle">Usando en el container principal:</h4>
+        <h5 class="itemInfo__example">
+            .container {<br>
+                margin-top: 20px;<br>
+                width: 80%;<br>
+                margin-left: auto;<br>
+                margin-right: auto;<br>
+                min-width: 320px;<br>
+                max-width: 1400px;<br>
+            }<br>
+        </h5>
+
+        <h4 class="itemInfo__subtitle">Usando en el container del video:</h4>
+        <h5 class="itemInfo__example">
+            .video { <br>
+                height: 0;<br>
+                padding-bottom: 56.25%;<br>
+                position: relative;<br>
+            }<br>
+        </h5>
+
+        <h4 class="itemInfo__subtitle">Usando en el frame:</h4>
+        <h5 class="itemInfo__example">
+            .video iframe {<br>
+                position: absolute;<br>
+                width: 100%;<br>
+                height: 100%;<br>
+            }<br>
+        </h5>
+    </div>
+
+    <div class="container">
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Dym1Q1gr0FI" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+    <!-- ------------ Video ------------  -->
+</body>
+</html>
