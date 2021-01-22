@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Direction</title>
+    <link rel="shortcut icon" href="/assets/css.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style/reset.css">
+    <link rel="stylesheet" href="flex-direction.css">
+</head>
+<body>
+    <h1 class="itemTitle">Flex-Direction</h1>
+    <h2 class="itemSubTitle">Flex tiene cuatro direcciones, como: row, row-reverse, column y column-reverse</h2>
+    <!-- ------------ Flex Box en dirección row ------------  -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">El display flex-box por defecto tiene row</h3>
+        <h4 class="itemInfo__subtitle">Usando:</h4>
+        <h5 class="itemInfo__example">
+            .container_row {<br>
+                height: 120px;<br>
+                background-color: blueviolet;<br>
+                display: flex;<br>
+            }<br>
+        </h5>
+    </div>
+
+    <section class="container_row">
+        <article class="item_row">Item 1</article>
+        <article class="item_row">Item 2</article>
+        <article class="item_row">Item 3</article>
+    </section>
+    <!-- ------------ Flex Box en dirección row ------------  -->
+
+    <!-- ------------ Flex Box en dirección row-reverse ------------  -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">Row-reverse</h3>
+        <h4 class="itemInfo__subtitle">Usando:</h4>
+        <h5 class="itemInfo__example">
+            .container_row-reverse {<br>
+                height: 120px;<br>
+                background-color: blueviolet;<br>
+                display: flex;<br>
+                flex-direction: row-reverse;<br>
+            }<br>
+        </h5>
+    </div>
+
+    <section class="container_row-reverse">
+        <article class="item_row-reverse">Item 1</article>
+        <article class="item_row-reverse">Item 2</article>
+        <article class="item_row-reverse">Item 3</article>
+    </section>
+    <!-- ------------ Flex Box en dirección row-reverse ------------  -->
+
+    <!-- ------------ Flex Box en dirección row-reverse en orden ------------  -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">Al usar row-reverse los items empiezan diferente manera, por lo que se puede ordenar</h3>
+        <h4 class="itemInfo__subtitle">Usando:</h4>
+        <h5 class="itemInfo__example">
+            .item_row-reverse-order:nth-child(1) {<br>
+                order: 3;<br>
+            }<br><br>
+            
+            .item_row-reverse-order:nth-child(2) {<br>
+                order: 2;<br>
+            }<br><br>
+            
+            .item_row-reverse-order:nth-child(3) {<br>
+                order: 1;<br>
+            }<br>
+        </h5>
+    </div>
+
+    <section class="container_row-reverse-order">
+        <article class="item_row-reverse-order">Item 1</article>
+        <article class="item_row-reverse-order">Item 2</article>
+        <article class="item_row-reverse-order">Item 3</article>
+    </section>
+    <!-- ------------ Flex Box en dirección row-reverse en orden------------  -->
+
+    <!-- ------------ Flex Box en dirección en columna ------------  -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">Column</h3>
+        <h4 class="itemInfo__subtitle">Usando:</h4>
+        <h5 class="itemInfo__example">
+            .container_column {<br>
+                height: 120px;<br>
+                background-color: blueviolet;<br>
+                display: flex;<br>
+                flex-direction: column;<br>
+            }<br>
+        </h5>
+    </div>
+
+    <section class="container_column">
+        <article class="item_column">Item 1</article>
+        <article class="item_column">Item 2</article>
+        <article class="item_column">Item 3</article>
+    </section>
+    <!-- ------------ Flex Box en dirección en columna ------------  -->
+
+    <!-- ------------ Flex Box en dirección en columna-reverse ------------  -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">Column</h3>
+        <h4 class="itemInfo__subtitle">Usando:</h4>
+        <h5 class="itemInfo__example">
+            .container_column-reverse {<br>
+                height: 120px;<br>
+                background-color: blueviolet;<br>
+                display: flex;<br>
+                flex-direction: column-reverse;<br>
+            }<br>
+        </h5>
+    </div>
+
+    <section class="container_column-reverse">
+        <article class="item_column-reverse">Item 1</article>
+        <article class="item_column-reverse">Item 2</article>
+        <article class="item_column-reverse">Item 3</article>
+    </section>
+    <!-- ------------ Flex Box en dirección en columna-reverse ------------  -->
+
+    <!-- ------------ Flex Box en dirección en columna-reverse en orden ------------  -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">Column Ordenado</h3>
+        <h4 class="itemInfo__subtitle">Usando:</h4>
+        <h5 class="itemInfo__example">
+            .item_column-reverse-order {<br>
+                background-color: cadetblue;<br>
+                margin: 3px 0;<br>
+            }<br><br>
+            
+            .item_column-reverse-order:nth-child(1) {<br>
+                order: 3;<br>
+            }<br>
+            
+            .item_column-reverse-order:nth-child(2) {<br>
+                order: 2;<br>
+            }<br><br>
+            
+            .item_column-reverse-order:nth-child(3) {<br>
+                order: 1;<br>
+            }<br>
+        </h5>
+    </div>
+
+    <section class="container_column-reverse-order">
+        <article class="item_column-reverse-order">Item 1</article>
+        <article class="item_column-reverse-order">Item 2</article>
+        <article class="item_column-reverse-order">Item 3</article>
+    </section>
+    <!-- ------------ Flex Box en dirección en columna-reverse en orden ------------  -->
+
+    <!-- ------------ Flex Box con flex-wrap ------------  -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">Flex Wrap: Manda a la siguiente fila cuando no caben. <br>Si se requiere que ocupe la patalla completa los items, en el reseteo de la hoja de estilos darle:</h3>
+        <h5 class="itemInfo__example">
+            *,<br>
+            *::after,<br>
+            *::before {<br>
+                box-sizing: border-box;<br>
+            }<br>
+        </h5>
+        <h4 class="itemInfo__subtitle">Usando:</h4>
+        <h5 class="itemInfo__example">
+            .container-wrap {<br>
+                height: 120px;<br>
+                background-color: blueviolet;<br>
+                display: flex;<br>
+                flex-wrap: wrap;<br>
+            }<br><br>
+            
+            .item-wrap {<br>
+                width: 20%;<br>
+                border: 1px solid black;<br>
+                background-color: cadetblue;<br>
+            }<br>
+        </h5>
+    </div>
+
+    <section class="container-wrap">
+        <article class="item-wrap">Item 1</article>
+        <article class="item-wrap">Item 2</article>
+        <article class="item-wrap">Item 3</article>
+        <article class="item-wrap">Item 4</article>
+        <article class="item-wrap">Item 5</article>
+        <article class="item-wrap">Item 6</article>
+        <article class="item-wrap">Item 7</article>
+        <article class="item-wrap">Item 8</article>
+        <article class="item-wrap">Item 9</article>
+        <article class="item-wrap">Item 10</article>
+        <article class="item-wrap">Item 11</article>
+        <article class="item-wrap">Item 12</article>
+        <article class="item-wrap">Item 13</article>
+        <article class="item-wrap">Item 14</article>
+        <article class="item-wrap">Item 15</article>
+        <article class="item-wrap">Item 16</article>
+        <article class="item-wrap">Item 17</article>
+    </section>
+    <!-- ------------ Flex Box con flex-wrap ------------  -->
+</body>
+</html>
