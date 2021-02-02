@@ -157,6 +157,12 @@ body {
 /* ------------ Flex Box en dirección column-reverse en orden ------------ */
 
 /* ------------ Flex Box con flex-wrap ------------ */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
 .container-wrap {
     height: 120px;
     background-color: blueviolet;
