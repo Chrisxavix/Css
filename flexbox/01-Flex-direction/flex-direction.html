@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex-Direction</title>
     <link rel="shortcut icon" href="/assets/css.png" type="image/x-icon">
-    <link rel="stylesheet" href="/style/reset.css">
+    <link rel="stylesheet" href="/style/normalize.css">
     <link rel="stylesheet" href="flex-direction.css">
 </head>
 <body>
@@ -153,29 +153,21 @@
 
     <!-- ------------ Flex Box con flex-wrap ------------  -->
     <div class="itemInfo">
-        <h3 class="itemInfo__title">Flex Wrap: Manda a la siguiente fila cuando no caben. <br>Si se requiere que ocupe la patalla completa los items, en el reseteo de la hoja de estilos darle:</h3>
-        <h5 class="itemInfo__example">
-            *,<br>
-            *::after,<br>
-            *::before {<br>
-                box-sizing: border-box;<br>
-            }<br>
-        </h5>
+        <h3 class="itemInfo__title">Flex Wrap: Manda a la siguiente fila cuando no caben.</h3>
         <h4 class="itemInfo__subtitle">Usando:</h4>
         <h5 class="itemInfo__example">
             .container-wrap {<br>
-                height: 120px;<br>
+                height: auto;<br>
                 background-color: blueviolet;<br>
                 display: flex;<br>
                 flex-wrap: wrap;<br>
             }<br><br>
             
             .item-wrap {<br>
-                width: 20%;<br>
+                width: 150px;<br>
                 border: 1px solid black;<br>
                 background-color: cadetblue;<br>
             }<br>
-        </h5>
     </div>
 
     <section class="container-wrap">

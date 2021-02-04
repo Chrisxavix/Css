@@ -157,21 +157,15 @@ body {
 /* ------------ Flex Box en dirección column-reverse en orden ------------ */
 
 /* ------------ Flex Box con flex-wrap ------------ */
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
-}
-
 .container-wrap {
-    height: 120px;
+    height: auto;
     background-color: blueviolet;
     display: flex;
     flex-wrap: wrap;
 }
 
 .item-wrap {
-    width: 20%;
+    width: 150px;
     border: 1px solid black;
     background-color: cadetblue;
 }

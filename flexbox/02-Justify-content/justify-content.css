@@ -1,0 +1,158 @@
+/* **************************** ITEM DESIGN **************************** */
+body {
+    background-image: radial-gradient(rgb(189, 180, 180), rgb(103, 104, 59));
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.itemTitle {
+    text-align:center;
+    color:rgb(204, 156, 25);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    letter-spacing: 5px;
+    text-shadow: -1px -1px 1px #01010c, 1px -1px 1px #01010c, -1px 1px 1px #01010c, 1px 1px 1px #01010c;
+}
+
+.itemSubTitle {
+    margin-top: 10px;
+    text-align:center;
+    font-size: 20px;
+    color: rgb(39, 36, 36);    
+}
+
+.itemInfo {
+    margin-top: 24px;
+    background-color: #09092c;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.itemInfo__title {
+    color: #fff;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.itemInfo__subtitle {
+    margin-top: 5px;
+    color: rgb(150, 140, 140);
+    font-size: 15px;
+    margin: 5px 10px;
+}
+
+.itemInfo__example {
+    margin-top: 5px;
+    color: rgb(84, 143, 66);
+    font-size: 15px;
+    margin: 0 10px;
+}
+/* **************************** ITEM DESIGN **************************** */
+
+/* ------------ Justify Content: Flex-Start ------------ */
+.containerJustify_Flex-Start {
+    height: auto;
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.itemJustify_Flex-Start {
+    width: 150px;
+    border: 1px solid black;
+    background-color: cadetblue;
+}
+/* ------------ Justify Content: Flex-Start ------------ */
+
+/* ------------ Justify Content: Flex-End ------------ */
+.containerJustify_Flex-End {
+    height: auto;
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.itemJustify_Flex-End {
+    width: 150px;
+    border: 1px solid black;
+    background-color: cadetblue;
+}
+/* ------------ Justify Content: Flex-End ------------ */
+
+/* ------------ Justify Content: Flex-Center ------------ */
+.containerJustify_Center {
+    height: auto;
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.itemJustify_Center {
+    width: 150px;
+    border: 1px solid black;
+    background-color: cadetblue;
+}
+/* ------------ Justify Content: Flex-Center ------------ */
+
+/* ------------ Justify Content: Space-Around ------------ */
+.containerJustify_Space-Around {
+    height: auto;
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.itemJustify_Space-Around {
+    width: 150px;
+    border: 1px solid black;
+    background-color: cadetblue;
+}
+/* ------------ Justify Content: Space-Around ------------ */
+
+/* ------------ Justify Content: Space-Between ------------ */
+.containerJustify_Space-Between {
+    height: auto;
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.itemJustify_Space-Between {
+    width: 150px;
+    border: 1px solid black;
+    background-color: cadetblue;
+}
+/* ------------ Justify Content: Space-Between ------------ */
+
+/* ------------ Justify Content: Space-Evenly ------------ */
+.containerJustify_Space-Evenly {
+    height: auto;
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.itemJustify_Space-Evenly {
+    width: 150px;
+    border: 1px solid black;
+    background-color: cadetblue;
+}
+/* ------------ Justify Content: Space-Evenly ------------ */
+
+/* ------------ Image ------------ */
+.content-img {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.content-img img {
+    border-radius: 15px;
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
+}
+/* ------------ Image ------------ */
