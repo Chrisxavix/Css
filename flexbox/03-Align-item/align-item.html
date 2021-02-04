@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align Item</title>
+    <link rel="stylesheet" href="/style/normalize.css">
+    <link rel="stylesheet" href="align-item.css">
+</head>
+<body>
+    <h1 class="itemTitle">Align Item</h1>
+    <h2 class="itemSubTitle">Alineación en el eje vertical.<br>Se le debe asignar un height.</h2>
+
+    <!-- ------------ Align-Items: Center ------------  -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">Alineación de los elementos hijos.</h3>
+        <h4 class="itemInfo__subtitle">Usando align-items: center</h4>
+        <h5 class="itemInfo__example">
+            .containerAlignItems_Center {<br>
+                background-color: blueviolet;<br>
+                height: 150px;<br>
+                display: flex;<br>
+                flex-direction: row;<br>
+                align-items: center;<br>
+            }<br>
+        </h5>
+    </div>
+
+    <section class="containerAlignItems_Center">
+        <article class="itemAlignItems_Center">Item 1</article>
+        <article class="itemAlignItems_Center">Item 2</article>
+        <article class="itemAlignItems_Center">Item 3</article>
+        <article class="itemAlignItems_Center">Item 4</article>
+        <article class="itemAlignItems_Center">Item 5</article>
+        <article class="itemAlignItems_Center">Item 6</article>
+        <article class="itemAlignItems_Center">Item 7</article>
+        <article class="itemAlignItems_Center">Item 8</article>
+        <article class="itemAlignItems_Center">Item 9</article>
+        <article class="itemAlignItems_Center">Item 10</article>
+        <article class="itemAlignItems_Center">Item 11</article>
+        <article class="itemAlignItems_Center">Item 12</article>
+        <article class="itemAlignItems_Center">Item 13</article>
+    </section>
+    <!-- ------------ Align-Items: Center ------------  -->
+
+    <!-- ------------ Align-Items: Flex-End ------------  -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">Alineación de los elementos hijos.</h3>
+        <h4 class="itemInfo__subtitle">Usando align-items: flex-end</h4>
+        <h5 class="itemInfo__example">
+            .containerAlignItems_Flex-End {<br>
+                background-color: blueviolet;<br>
+                height: 150px;<br>
+                display: flex;<br>
+                flex-direction: row;<br>
+                align-items: flex-end;<br>
+            }<br>
+        </h5>
+    </div>
+
+    <section class="containerAlignItems_Flex-End">
+        <article class="itemAlignItems_Flex-End">Item 1</article>
+        <article class="itemAlignItems_Flex-End">Item 2</article>
+        <article class="itemAlignItems_Flex-End">Item 3</article>
+        <article class="itemAlignItems_Flex-End">Item 4</article>
+        <article class="itemAlignItems_Flex-End">Item 5</article>
+        <article class="itemAlignItems_Flex-End">Item 6</article>
+        <article class="itemAlignItems_Flex-End">Item 7</article>
+        <article class="itemAlignItems_Flex-End">Item 8</article>
+        <article class="itemAlignItems_Flex-End">Item 9</article>
+        <article class="itemAlignItems_Flex-End">Item 10</article>
+        <article class="itemAlignItems_Flex-End">Item 11</article>
+        <article class="itemAlignItems_Flex-End">Item 12</article>
+        <article class="itemAlignItems_Flex-End">Item 13</article>
+    </section>
+    <!-- ------------ Align-Items: Flex-End ------------  -->
+
+    <!-- ------------ Align-Items: Flex-Start ------------  -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">Alineación de los elementos hijos.</h3>
+        <h4 class="itemInfo__subtitle">Usando align-items: flex-start</h4>
+        <h5 class="itemInfo__example">
+            .containerAlignItems_Flex-Start {<br>
+                background-color: blueviolet;<br>
+                height: 150px;<br>
+                display: flex;<br>
+                flex-direction: row;<br>
+                align-items: flex-start;<br>
+            }<br>
+        </h5>
+    </div>
+
+    <section class="containerAlignItems_Flex-Start">
+        <article class="itemAlignItems_Flex-Start">Item 1</article>
+        <article class="itemAlignItems_Flex-Start">Item 2</article>
+        <article class="itemAlignItems_Flex-Start">Item 3</article>
+        <article class="itemAlignItems_Flex-Start">Item 4</article>
+        <article class="itemAlignItems_Flex-Start">Item 5</article>
+        <article class="itemAlignItems_Flex-Start">Item 6</article>
+        <article class="itemAlignItems_Flex-Start">Item 7</article>
+        <article class="itemAlignItems_Flex-Start">Item 8</article>
+        <article class="itemAlignItems_Flex-Start">Item 9</article>
+        <article class="itemAlignItems_Flex-Start">Item 10</article>
+        <article class="itemAlignItems_Flex-Start">Item 11</article>
+        <article class="itemAlignItems_Flex-Start">Item 12</article>
+        <article class="itemAlignItems_Flex-Start">Item 13</article>
+    </section>
+    <!-- ------------ Align-Items: Flex-Start ------------  -->
+
+    <!-- ------------ Align-Items: Flex-Baseline ------------  -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">Alineación de los elementos hijos, se alinean de acuerdo al texto inicial.</h3>
+        <h4 class="itemInfo__subtitle">Usando align-items: baseline</h4>
+        <h5 class="itemInfo__example">
+            .containerAlignItems_Flex-Baseline {<br>
+                background-color: blueviolet;<br>
+                height: 150px;<br>
+                display: flex;<br>
+                flex-direction: row;<br>
+                align-items: baseline;<br>
+            }<br><br>
+            
+            .itemAlignItems_Flex-Baseline {<br>
+                width: 70px;<br>
+                border: 1px solid black;<br>
+                background-color: cadetblue;<br>
+            }<br><br>
+            
+            .itemAlignItems_Flex-Baseline:nth-child(4) {<br>
+                font-size: 20px;<br>
+            }<br>
+        </h5>
+    </div>
+
+    <section class="containerAlignItems_Flex-Baseline">
+        <article class="itemAlignItems_Flex-Baseline">Item 1</article>
+        <article class="itemAlignItems_Flex-Baseline">Item 2</article>
+        <article class="itemAlignItems_Flex-Baseline">Item 3</article>
+        <article class="itemAlignItems_Flex-Baseline">Item 4</article>
+        <article class="itemAlignItems_Flex-Baseline">Item 5</article>
+        <article class="itemAlignItems_Flex-Baseline">Item 6</article>
+        <article class="itemAlignItems_Flex-Baseline">Item 7</article>
+        <article class="itemAlignItems_Flex-Baseline">Item 8</article>
+        <article class="itemAlignItems_Flex-Baseline">Item 9</article>
+        <article class="itemAlignItems_Flex-Baseline">Item 10</article>
+        <article class="itemAlignItems_Flex-Baseline">Item 11</article>
+        <article class="itemAlignItems_Flex-Baseline">Item 12</article>
+        <article class="itemAlignItems_Flex-Baseline">Item 13</article>
+    </section>
+    <!-- ------------ Align-Items: Flex-Baseline ------------  -->
+
+    <div class="content-img">
+        <img src="assets/align_items.png" alt="">
+    </div>
+
+</body>
+</html>
