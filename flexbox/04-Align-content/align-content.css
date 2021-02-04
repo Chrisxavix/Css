@@ -64,3 +64,36 @@ body {
     background-color: cadetblue;
 }
 /* ------------ Align-Content: Flex-Start ------------ */
+
+/* ------------ Align-Content: Flex-End ------------ */
+.containerAlignContent_Flex-End {
+    height: 120px;
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+.itemAlignContent_Flex-End {
+    width: 20%;
+    border: 1px solid black;
+    background-color: cadetblue;
+}
+/* ------------ Align-Content: Flex-End ------------ */
+
+
+/* ------------ Align-Content: Center ------------ */
+.containerAlignContent_Center {
+    height: 120px;
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.itemAlignContent_Center {
+    width: 20%;
+    border: 1px solid black;
+    background-color: cadetblue;
+}
+/* ------------ Align-Content: Center ------------ */
