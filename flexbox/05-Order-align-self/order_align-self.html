@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="/style/normalize.css">
+    <link rel="stylesheet" href="order_align-self.css">
+</head>
+<body>
+    <h1 class="itemTitle">Order</h1>
+
+    <!-- ------------ Order ------------  -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">Ordena las cajas.</h3>
+        <h4 class="itemInfo__subtitle">Entrando en los hijos se le agrega: order: 1. 
+            <br>Por defecto las demás cajas agarran la posición 0.</h4>
+        <h5 class="itemInfo__example">
+            .containerOrder {<br>
+                height: 120px;<br>
+                background-color: blueviolet;<br>
+                display: flex;<br>
+            }<br><br>
+            
+            .itemOrder {<br>
+                border: 1px solid black;<br>
+                background-color: cadetblue;<br>
+            }<br>
+            
+            .itemOrder:nth-child(2) {<br>
+                order: 1;<br>
+            }<br><br>
+            
+            .itemOrder:nth-child(5) {<br>
+                order: 2;<br>
+            }<br>
+        </h5>
+    </div>
+
+    <section class="containerOrder">
+        <article class="itemOrder">Item 1</article>
+        <article class="itemOrder">Item 2</article>
+        <article class="itemOrder">Item 3</article>
+        <article class="itemOrder">Item 4</article>
+        <article class="itemOrder">Item 5</article>
+        <article class="itemOrder">Item 6</article>
+        <article class="itemOrder">Item 7</article>
+        <article class="itemOrder">Item 8</article>
+        <article class="itemOrder">Item 9</article>
+        <article class="itemOrder">Item 10</article>
+        <article class="itemOrder">Item 11</article>
+        <article class="itemOrder">Item 12</article>
+        <article class="itemOrder">Item 13</article>
+    </section>
+    <!-- ------------ Order ------------  -->
+
+    <!-- ------------ Align Self ------------  -->
+    <h1 class="itemTitle">Align Self</h1>
+    
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">Ordena las cajas.</h3>
+        <h4 class="itemInfo__subtitle">Sobreescribe el valor de align-item. <br>
+            Por se debe entrar directo en los hijos.</h4>
+        <h5 class="itemInfo__example">
+            .containerAlign-Self {<br>
+                height: 120px;<br>
+                background-color: blueviolet;<br>
+                display: flex;<br>
+            }<br><br>
+            
+            .itemAlign-Self {<br>
+                border: 1px solid black;<br>
+                background-color: cadetblue;<br>
+            }<br>
+            
+            .itemAlign-Self:nth-child(2) {<br>
+                align-self: flex-start;<br>
+            }<br>
+        </h5>
+    </div>
+
+    <section class="containerAlign-Self">
+        <article class="itemAlign-Self">Item 1</article>
+        <article class="itemAlign-Self">Item 2</article>
+        <article class="itemAlign-Self">Item 3</article>
+        <article class="itemAlign-Self">Item 4</article>
+        <article class="itemAlign-Self">Item 5</article>
+        <article class="itemAlign-Self">Item 6</article>
+        <article class="itemAlign-Self">Item 7</article>
+        <article class="itemAlign-Self">Item 8</article>
+        <article class="itemAlign-Self">Item 9</article>
+        <article class="itemAlign-Self">Item 10</article>
+        <article class="itemAlign-Self">Item 11</article>
+        <article class="itemAlign-Self">Item 12</article>
+        <article class="itemAlign-Self">Item 13</article>
+    </section>
+    <!-- ------------ Align Self ------------  -->
+
+</body>
+</html>
