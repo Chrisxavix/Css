@@ -97,3 +97,35 @@ body {
     background-color: cadetblue;
 }
 /* ------------ Align-Content: Center ------------ */
+
+/* ------------ Align-Content: Space-Around ------------ */
+.containerAlignContent_Space-Around {
+    height: 120px;
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+.itemAlignContent_Space-Around {
+    width: 20%;
+    border: 1px solid black;
+    background-color: cadetblue;
+}
+/* ------------ Align-Content: Space_Around ------------ */
+
+/* ------------ Align-Content: Space-Between ------------ */
+.containerAlignContent_Space-Between {
+    height: 120px;
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.itemAlignContent_Space-Between {
+    width: 20%;
+    border: 1px solid black;
+    background-color: cadetblue;
+}
+/* ------------ Align-Content: Space_Between ------------ */
