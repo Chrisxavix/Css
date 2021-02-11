@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Flow</title>
+    <link rel="shortcut icon" href="/assets/css.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style/normalize.css">
+    <link rel="stylesheet" href="grid-flow.css">
+</head>
+<body>
+    <h1 class="itemTitle">Grid Flow</h1>
+    <!-- ------------ Grid Position ------------  -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">Asignar valores a la grid implicita.</h3>
+        <h4 class="itemInfo__subtitle">Cuando las filas o columnas no están definidas.</h4>
+        <h4 class="itemInfo__subtitle">Usando grid-auto-rows para filas, grid-auto-columns para las columnas y grid-auto-flow cuando no se define.</h4>
+        <h5 class="itemInfo__example">
+            .gridFlow {<br>
+                display: grid;<br>
+                grid-template-columns: repeat(3, 1fr);<br>
+                grid-template-rows: repeat(3, 120px);<br>
+                grid-auto-rows: 70px;<br>
+            }<br>
+        </h5>
+    </div>
+
+    <div class="gridContainer gridFlow">
+        <div class="gridItem"><p>Grid Item 1</p></div>
+        <div class="gridItem"><p>Grid Item 2</p></div>
+        <div class="gridItem"><p>Grid Item 3</p></div>
+        <div class="gridItem"><p>Grid Item 4</p></div>
+        <div class="gridItem"><p>Grid Item 5</p></div>
+        <div class="gridItem"><p>Grid Item 6</p></div>
+        <div class="gridItem"><p>Grid Item 7</p></div>
+        <div class="gridItem"><p>Grid Item 8</p></div>
+        <div class="gridItem"><p>Grid Item 9</p></div>
+        <div class="gridItem"><p>Grid Item 10</p></div>
+        <div class="gridItem"><p>Grid Item 11</p></div>
+        <div class="gridItem"><p>Grid Item 12</p></div>
+        <div class="gridItem"><p>Grid Item 13</p></div>
+        <div class="gridItem"><p>Grid Item 14</p></div>
+        <div class="gridItem"><p>Grid Item 15</p></div>
+    </div>
+    <!-- ------------ Grid Position ------------  -->
+    
+</body>
+</html>
