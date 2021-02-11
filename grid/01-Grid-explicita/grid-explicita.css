@@ -1,0 +1,71 @@
+/* **************************** ITEM DESIGN **************************** */
+body {
+    background-image: radial-gradient(rgb(189, 180, 180), rgb(103, 104, 59));
+    background-repeat: no-repeat;
+    /* height: auto; */
+}
+
+.itemTitle {
+    text-align:center;
+    color:rgb(204, 156, 25);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    letter-spacing: 5px;
+    text-shadow: -1px -1px 1px #01010c, 1px -1px 1px #01010c, -1px 1px 1px #01010c, 1px 1px 1px #01010c;
+}
+
+.itemSubTitle {
+    margin-top: 10px;
+    text-align:center;
+    font-size: 20px;
+    color: rgb(39, 36, 36);    
+}
+
+.itemInfo {
+    margin-top: 24px;
+    background-color: #09092c;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.itemInfo__title {
+    color: #fff;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.itemInfo__subtitle {
+    margin-top: 5px;
+    color: rgb(150, 140, 140);
+    font-size: 15px;
+    margin: 5px 10px;
+}
+
+.itemInfo__example {
+    margin-top: 5px;
+    color: rgb(84, 143, 66);
+    font-size: 15px;
+    margin: 0 10px;
+}
+/* **************************** ITEM DESIGN **************************** */
+/* ------------ Grid Position ------------ */
+.gridContainer {
+    margin: 20px auto;
+    width: 80vw;
+    height: 100vh;
+    background-color: #222;
+    border: 1px solid #000;
+}
+
+.gridItem {
+    background-color: #666;
+    border: 2px solid #999;
+}
+
+.gridExplicit {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 4px 4px;
+}
+/* ------------ Grid Position ------------ */
