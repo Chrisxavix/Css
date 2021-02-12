@@ -105,5 +105,35 @@ body {
     grid-column: span 3;
     grid-row: span 3;
 }
-
 /* ------------ Grid Dense1 ------------ */
+
+/* ------------ Grid Dense Flow ------------ */
+.gridContainerDenseFlow {
+    margin: 0 auto;
+    width: 80vw;
+    height: auto;
+    background-color: #222;
+    border: medium solid #000;
+}
+
+.gridItemDenseFlow {
+    padding: 1%;
+    font-size: 1.25rem;
+    background-color: #666;
+    border: 2px solid #999;
+}
+
+.gridDenseFlow {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-auto-flow: dense;
+    grid-auto-rows: 200px;
+}
+
+.gridItemDenseFlow:nth-child(9) {
+    background-color: rgb(16, 13, 19);
+    grid-column: span 3;
+    grid-row: span 3;
+}
+/* ------------ Grid Dense Flow ------------ */
