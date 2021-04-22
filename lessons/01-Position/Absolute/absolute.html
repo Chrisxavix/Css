@@ -10,5 +10,73 @@
 </head>
 <body>
     <h1 class="itemTitle">Position Absolute</h1>
+
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">Usando Position Absolute</h3>
+        <h4 class="itemInfo__subtitle">Al usar <i>(position: absolute)</i> hace que el elemento se coloque respecto a su contenedor más cercano. Si no ecnuentra, será el viewport. <br>No conserva su espacio en el flujo.</h4>
+        <h4 class="itemInfo__subtitle">Usando:</h4>
+        <h5 class="itemInfo__example">
+            .container {<br>
+                border: 3px solid black;<br>
+                width: 300px;<br>
+                height: 300px;<br>
+                margin-left: auto;<br>
+                margin-right: auto;<br>
+                /* al colocar position relative las cajas (box1,2,3...) será el que los contenga */<br>
+                position: relative;<br>
+            }<br>
+            <br>
+            .box_1, .box_2, .box_3, .box_4, .box_5 {<br>
+                width: 50px;<br>
+                height: 50px;<br>
+            }<br>
+            <br>
+            .box_1 {<br>
+                border: 4px solid tomato;<br>
+                position: absolute;<br>
+                left: 0;<br>
+                top: 0;<br>
+            }<br>
+            <br>
+            .box_2 {<br>
+                border: 4px solid rgb(43, 212, 27);<br>
+                position: absolute;<br>
+                right: 0;<br>
+                top: 0;<br>
+            }<br>
+            <br>
+            .box_3 {<br>
+                border: 4px solid rgb(145, 11, 66);<br>
+                position: absolute;<br>
+                left: 0;<br>
+                bottom: 0;<br>
+            }<br>
+            <br>
+            .box_4 {<br>
+                border: 4px solid rgb(141, 233, 22);<br>
+                position: absolute;<br>
+                right: 0;<br>
+                bottom: 0;<br>
+            }<br>
+            <br>
+            .box_5 {<br>
+                border: 4px solid rgb(63, 16, 139);<br>
+                position: absolute;<br>
+                top: 0;<br>
+                right: 0;<br>
+                left: 0;<br>
+                bottom: 0;<br>
+                margin: auto;<br>
+            }<br>
+        </h5>
+
+        <div class="container">
+            <div class="box_1">box1</div>
+            <div class="box_2">box2</div>
+            <div class="box_3">box3</div>
+            <div class="box_4">box4</div>
+            <div class="box_5">box5</div>
+        </div>
+    </div>
 </body>
 </html>
