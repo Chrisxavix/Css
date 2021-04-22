@@ -1,0 +1,71 @@
+/* **************************** ITEM DESIGN **************************** */
+body {
+    background-image: radial-gradient(rgb(189, 180, 180), rgb(103, 104, 59));
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.itemTitle {
+    text-align:center;
+    color:rgb(204, 156, 25);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    letter-spacing: 5px;
+    text-shadow: -1px -1px 1px #01010c, 1px -1px 1px #01010c, -1px 1px 1px #01010c, 1px 1px 1px #01010c;
+}
+
+.itemSubTitle {
+    margin-top: 10px;
+    text-align:center;
+    font-size: 20px;
+    color: rgb(39, 36, 36);    
+}
+
+.itemInfo {
+    margin-top: 24px;
+    background-color: #09092c;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.itemInfo__title {
+    color: #fff;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.itemInfo__subtitle {
+    margin-top: 5px;
+    color: rgb(150, 140, 140);
+    font-size: 15px;
+    margin: 5px 10px;
+}
+
+.itemInfo__example {
+    margin-top: 5px;
+    color: rgb(84, 143, 66);
+    font-size: 15px;
+    margin: 0 10px;
+}
+/* **************************** ITEM DESIGN **************************** */
+
+/* ------------ Position Fixed ------------ */
+.menu {
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    background: darkcyan;
+    padding: 20px;
+    position: fixed;
+    /* el top 0 es para que se posicione desde el inicio, ya que es fixed, y estará siempre en la pantalla, así haya un scroll */
+    top: 0;
+    /* el width para que ocupe todo el bloque, ya que fixed lo convierte en un elemento en línea */
+    width: 100%;
+}
+
+body {
+    /* Para que desde el body baje 90px */
+    margin-top: 90px;
+    margin: 0;
+}
+/* ------------ Position Fixed ------------ */
