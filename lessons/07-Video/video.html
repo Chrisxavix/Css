@@ -10,9 +10,9 @@
 </head>
 <body>
     <h1 class="itemTitle">Lists</h1>
-    <!-- ------------ Video ------------  -->
+    <!-- ------------ Video Opción 1 ------------  -->
     <div class="itemInfo">
-        <h3 class="itemInfo__title">Video</h3>
+        <h3 class="itemInfo__title">Video, Opción 1</h3>
         <h4 class="itemInfo__subtitle">Usando en el container principal:</h4>
         <h5 class="itemInfo__example">
             .container {<br>
@@ -51,6 +51,37 @@
             </iframe>
         </div>
     </div>
-    <!-- ------------ Video ------------  -->
+    <!-- ------------ Video Opción 1 ------------  -->
+
+    <!-- ------------ Video Opción 2 ------------  -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">Video, Opción 2</h3>
+        <h4 class="itemInfo__subtitle">Usando en el container principal con video-responsive:</h4>
+        <h5 class="itemInfo__example">
+            .video-responsive {<br>
+                height: 0;<br>
+                overflow: hidden;<br>
+                padding-bottom: 56.25%;<br>
+                padding-top: 30px;<br>
+                position: relative;<br>
+            }<br>
+        </h5>
+
+        <h4 class="itemInfo__subtitle">Usando en el hijo del container:</h4>
+        <h5 class="itemInfo__example">
+            .video-responsive iframe, .video-responsive object, .video-responsive embed {<br>
+                height: 100%;<br>
+                left: 0;<br>
+                position: absolute;<br>
+                top: 0;<br>
+                width: 100%;<br>
+            }<br>
+        </h5>
+    </div>
+
+    <div class="video-responsive">
+        <iframe src="https://www.youtube.com/embed/Dym1Q1gr0FI" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <!-- ------------ Video Opción 2 ------------  -->
 </body>
 </html>
