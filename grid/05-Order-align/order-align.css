@@ -1,0 +1,205 @@
+/* **************************** ITEM DESIGN **************************** */
+body {
+    background-image: radial-gradient(rgb(189, 180, 180), rgb(103, 104, 59));
+    background-repeat: no-repeat;
+    height: auto;
+}
+
+.itemTitle {
+    text-align:center;
+    color:rgb(204, 156, 25);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    letter-spacing: 5px;
+    text-shadow: -1px -1px 1px #01010c, 1px -1px 1px #01010c, -1px 1px 1px #01010c, 1px 1px 1px #01010c;
+}
+
+.itemSubTitle {
+    margin-top: 10px;
+    text-align:center;
+    font-size: 20px;
+    color: rgb(39, 36, 36);    
+}
+
+.itemInfo {
+    margin-top: 24px;
+    background-color: #09092c;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.itemInfo__title {
+    color: #fff;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.itemInfo__subtitle {
+    margin-top: 5px;
+    color: rgb(150, 140, 140);
+    font-size: 15px;
+    margin: 5px 10px;
+}
+
+.itemInfo__example {
+    margin-top: 5px;
+    color: rgb(84, 143, 66);
+    font-size: 15px;
+    margin: 0 10px;
+}
+
+/* ------------ Image ------------ */
+.content-img {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.content-img img {
+    border-radius: 15px;
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
+}
+/* ------------ Image ------------ */
+/* **************************** ITEM DESIGN **************************** */
+
+/* ------------ Order-Order ------------ */
+.grid__container {
+    margin: 0 auto;
+    width: 80vw;
+    height: 100vh;
+    background-color: #222;
+    border: medium solid #000;
+    margin-top: 20px;
+}
+
+.grid__order {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.grid__item {
+    padding: 1%;
+    font-size: 1.25rem;
+    background-color: #666;
+    border: 2px solid #999;
+}
+
+.grid__item:nth-child(3) {
+    background-color: rgb(128, 36, 36);
+    order: 1;
+}
+
+.grid__item:nth-child(2) {
+    background-color: rgb(36, 128, 100);
+    order: 2;
+}
+/* ------------ Order-Order ------------ */
+
+/* ------------ Align-Justify-items ------------ */
+.grid__container1 {
+    margin: 0 auto;
+    width: 80vw;
+    height: 100vh;
+    background-color: #222;
+    border: medium solid #000;
+    margin-top: 20px;
+}
+
+.grid__align {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(2, 200px);
+    justify-items: center;
+}
+
+.grid__item1 {
+    padding: 1%;
+    font-size: 1.25rem;
+    background-color: #666;
+    border: 2px solid #999;
+}
+/* ------------ Align-Justify-items ------------ */
+
+/* ------------ Align-Align-items ------------ */
+.grid__container2 {
+    margin: 0 auto;
+    width: 80vw;
+    height: 100vh;
+    background-color: #222;
+    border: medium solid #000;
+    margin-top: 20px;
+}
+
+.grid__align2 {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(2, 200px);
+    align-items: center;
+}
+
+.grid__item2 {
+    padding: 1%;
+    font-size: 1.25rem;
+    background-color: #666;
+    border: 2px solid #999;
+}
+/* ------------ Align-Align-items ------------ */
+
+/* ------------ Align - Align-items and Justify-items ------------ */
+.grid__container3 {
+    margin: 0 auto;
+    width: 80vw;
+    height: 100vh;
+    background-color: #222;
+    border: medium solid #000;
+    margin-top: 20px;
+}
+
+.grid__item3 {
+    padding: 1%;
+    font-size: 1.25rem;
+    background-color: #666;
+    border: 2px solid #999;
+}
+
+.grid__align3 {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(2, 200px);
+    align-items: center;
+    justify-items: center;
+}
+/* ------------ Align - Align-items and Justify-items ------------ */
+
+/* ------------ Align - Alineando un hijo ------------ */
+.grid__container4 {
+    margin: 0 auto;
+    width: 80vw;
+    height: 100vh;
+    background-color: #222;
+    border: medium solid #000;
+    margin-top: 30px;
+}
+
+.grid__align4 {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(2, 200px);
+}
+
+.grid__item4 {
+    padding: 1%;
+    font-size: 1.25rem;
+    background-color: #666;
+    border: 2px solid #999;
+}
+
+.grid__item4:nth-child(5) {
+    padding: 1%;
+    font-size: 1.25rem;
+    background-color: #666;
+    border: 2px solid #999;
+    align-self: end;
+    justify-self: center;
+}
+/* ------------ Align - Alineando un hijo ------------ */

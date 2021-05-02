@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Track</title>
+    <link rel="shortcut icon" href="/assets/css.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style/normalize.css">
+    <link rel="stylesheet" href="grid-track.css">
+</head>
+<body>
+    <h1 class="itemTitle">Grid Track</h1>
+    <h2 class="itemSubTitle">Sirve para mover la grilla por el contenedor.</h2>
+    <!-- ------------ Grid Track - Horizontal ------------  -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">
+            Alinear de manera horizontal <br>
+            Alinear la grilla dentro del contenedor padre con: justify-content: center; / start / end
+        </h3>
+        <h5 class="itemInfo__example">
+            Contenedor Principal:<br><br>
+            .grid__container {<br>
+                margin: 0 auto;<br>
+                width: 80vw;<br>
+                height: 100vh;<br>
+                background-color: #222;<br>
+                border: medium solid #000;<br>
+                margin-top: 30px;<br>
+            }<br><br>
+
+            Contenedor de alineación<br><br>
+            .grid__track {<br>
+                display: grid;<br>
+                grid-template-columns: repeat(3, 200px);<br>
+                grid-template-rows: repeat(2, 200px);<br>
+                justify-content: end;<br>
+            }<br><br>
+
+            El diseño para todos los items<br><br>
+            .grid__item {<br>
+                padding: 1%;<br>
+                font-size: 1.25rem;<br>
+                background-color: #666;<br>
+                border: 2px solid #999;<br>
+            }<br><br>      
+        </h5>
+    </div>
+
+    <div class="grid__container grid__track">
+        <div class="grid__item"><p>Grid Item 1</p></div>
+        <div class="grid__item"><p>Grid Item 2</p></div>
+        <div class="grid__item"><p>Grid Item 3</p></div>
+        <div class="grid__item"><p>Grid Item 4</p></div>
+        <div class="grid__item"><p>Grid Item 5</p></div>
+    </div>
+
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">
+            Desde Inspeccionar elemento:
+        </h3>
+    </div>
+
+    <div class="content-img">
+        <img src="assets/track_horizontal.jpg" alt="">
+    </div>
+    <!-- ------------ Grid Track - Horizontal ------------  -->
+
+    <!-- ------------ Grid Track - Vertical ------------  -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">
+            Alinear de manera vertical<br>
+            Alinear la grilla dentro del contenedor padre con: align-content: end; center / start 
+        </h3>
+        <h5 class="itemInfo__example">
+            Contenedor Principal:<br><br>
+            .grid__container1 {<br>
+                margin: 0 auto;<br>
+                width: 80vw;<br>
+                height: 100vh;<br>
+                background-color: #222;<br>
+                border: medium solid #000;<br>
+                margin-top: 30px;<br>
+            }<br><br>
+
+            Contenedor de alineación<br><br>
+            .grid__track1 {<br>
+                display: grid;<br>
+                grid-template-columns: repeat(3, 200px);<br>
+                grid-template-rows: repeat(2, 200px);<br>
+                align-content: end;<br>
+            }<br><br>
+
+            El diseño para todos los items<br><br>
+            .grid__item1 {<br>
+                padding: 1%;<br>
+                font-size: 1.25rem;<br>
+                background-color: #666;<br>
+                border: 2px solid #999;<br>
+            }<br>
+        </h5>
+    </div>
+
+    <div class="grid__container1 grid__track1">
+        <div class="grid__item1"><p>Grid Item 1</p></div>
+        <div class="grid__item1"><p>Grid Item 2</p></div>
+        <div class="grid__item1"><p>Grid Item 3</p></div>
+        <div class="grid__item1"><p>Grid Item 4</p></div>
+        <div class="grid__item1"><p>Grid Item 5</p></div>
+    </div>
+
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">
+            Desde Inspeccionar elemento:
+        </h3>
+    </div>
+
+    <div class="content-img">
+        <img src="assets/track-vertical.jpg" alt="">
+    </div>
+    <!-- ------------ Grid Track - Vertical ------------  -->
+
+    <!-- ------------ Grid Track - Horizontal y vertical ------------  -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">
+            Alineado en horizontal y vertical
+        </h3>
+        <h5 class="itemInfo__example">
+            Contenedor Principal:<br><br>
+            .grid__container2 {<br>
+                margin: 0 auto;<br>
+                width: 80vw;<br>
+                height: 100vh;<br>
+                background-color: #222;<br>
+                border: medium solid #000;<br>
+            }<br><br>
+            
+
+            Contenedor de alineación<br><br>
+            .grid__track2 {<br>
+                display: grid;<br>
+                grid-template-columns: repeat(3, 200px);<br>
+                grid-template-rows: repeat(2, 200px);<br>
+                justify-content: center;<br>
+                align-content: center;<br>
+            }<br><br>
+
+            El diseño para todos los items<br><br>
+            .grid__item2 {<br>
+                padding: 1%;<br>
+                font-size: 1.25rem;<br>
+                background-color: #666;<br>
+                border: 2px solid #999;<br>
+            }<br>
+        </h5>
+    </div>
+
+    <div class="grid__container2 grid__track2">
+        <div class="grid__item2"><p>Grid Item 1</p></div>
+        <div class="grid__item2"><p>Grid Item 2</p></div>
+        <div class="grid__item2"><p>Grid Item 3</p></div>
+        <div class="grid__item2"><p>Grid Item 4</p></div>
+        <div class="grid__item2"><p>Grid Item 5</p></div>
+    </div>
+
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">
+            Desde Inspeccionar elemento:
+        </h3>
+    </div>
+
+    <div class="content-img">
+        <img src="assets/dos_posiciones.jpg" alt="">
+    </div>
+    <!-- ------------ Grid Track - Horizontal y vertical ------------  -->
+</body>
+</html>

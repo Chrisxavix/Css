@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order-Align</title>
+    <link rel="shortcut icon" href="/assets/css.png" type="image/x-icon">
+    <link rel="stylesheet" href="order-align.css">
+    <link rel="stylesheet" href="/style/normalize.css">
+</head>
+<body>
+    <h1 class="itemTitle">Order</h1>
+    <!-- ------------ Order-Order ------------  -->
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">Por defecto el ordenamiento lo trae en: order: 0; <br>Para cambiar el orden se entra en el item hijo, y se asigna el valor de 1 en adelante para posicionar:
+        </h3>
+        <h5 class="itemInfo__example">
+            Contenedor Principal:<br><br>
+            .grid__container {<br>
+                margin: 0 auto;<br>
+                width: 80vw;<br>
+                height: 100vh;<br>
+                background-color: #222;<br>
+                border: medium solid #000;<br>
+            }<br><br>
+
+            Contenedor de Orden<br><br>
+            .grid__order {<br>
+                display: grid;<br>
+                grid-template-columns: repeat(3, 1fr);<br>
+                grid-template-rows: repeat(2, 1fr);<br>
+            }<br><br>
+
+            El diseño para todos los items<br><br>
+            .grid__item {<br>
+                padding: 1%;<br>
+                font-size: 1.25rem;<br>
+                background-color: #666;<br>
+                border: 2px solid #999;<br>
+            }<br><br>
+
+            Dar el orden a items específicos<br><br> 
+            .grid__item:nth-child(3) {<br>
+                background-color: rgb(128, 36, 36);<br>
+                order: 1;<br>
+            }<br><br>
+            
+            .grid__item:nth-child(2) {<br>
+                background-color: rgb(36, 128, 100);<br>
+                order: 2;<br>
+            }<br><br>
+        </h5>
+    </div>
+
+    <div class="grid__container grid__order">
+        <div class="grid__item"><p>Grid Item 1</p></div>
+        <div class="grid__item"><p>Grid Item 2</p></div>
+        <div class="grid__item"><p>Grid Item 3</p></div>
+        <div class="grid__item"><p>Grid Item 4</p></div>
+        <div class="grid__item"><p>Grid Item 5</p></div>
+    </div>
+    <!-- ------------ Order-Order ------------  -->
+
+    <!-- ------------ Align-Justify-items ------------  -->
+    <h1 class="itemTitle">Grid Align - justify-items</h1>
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">
+            Observar los cambios desde "Inspeccionar Elementos"<br>
+            Alinear de manera horizontal usando en la clase contenedora o padre:<br>
+            justify-items: center;<br>
+            Puede ser: justify-items: center; / start / end
+        </h3>
+        <h5 class="itemInfo__example">
+            Contenedor Principal:<br><br>
+            .grid__container1 {<br>
+                margin: 0 auto;<br>
+                width: 80vw;<br>
+                height: 100vh;<br>
+                background-color: #222;<br>
+                border: medium solid #000;<br>
+            }<br><br>
+
+            Contenedor de alineación:<br><br>
+            .grid__align {<br>
+                display: grid;<br>
+                grid-template-columns: repeat(3, 200px);<br>
+                grid-template-rows: repeat(2, 200px);<br>
+                justify-items: center;<br>
+            }<br><br>
+
+            El diseño para todos los items<br><br>
+            .grid__item1 {<br>
+                padding: 1%;<br>
+                font-size: 1.25rem;<br>
+                background-color: #666;<br>
+                border: 2px solid #999;<br>
+            }<br><br>
+        </h5>
+    </div>
+
+    <div class="grid__container1 grid__align">
+        <div class="grid__item1"><p>Grid Item 1</p></div>
+        <div class="grid__item1"><p>Grid Item 2</p></div>
+        <div class="grid__item1"><p>Grid Item 3</p></div>
+        <div class="grid__item1"><p>Grid Item 4</p></div>
+        <div class="grid__item1"><p>Grid Item 5</p></div>
+    </div>
+
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">
+            Desde Inspeccionar elemento:
+        </h3>
+    </div>
+
+    <div class="content-img">
+        <img src="assets/grid_justify_center.jpg" alt="">
+    </div>
+    <!-- ------------ Align-Justify-items ------------  -->
+
+    <!-- ------------ Align-Align-items ------------  -->
+    <h1 class="itemTitle">Grid Align - align-items</h1>
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">
+            <br>
+            Observar los cambios desde "Inspeccionar Elementos"<br>
+            Alinear de manera vertical usando en la clase contenedora o padre:<br>
+            align-items: center;<br>
+            Puede ser: align-items: center; / start / end
+        </h3>
+        <h5 class="itemInfo__example">
+            Contenedor Principal:<br><br>
+            .grid__container2 {<br>
+                margin: 0 auto;<br>
+                width: 80vw;<br>
+                height: 100vh;<br>
+                background-color: #222;<br>
+                border: medium solid #000;<br>
+            }<br><br>
+
+            Contenedor de alineación:<br><br>
+            .grid__align2 {<br>
+                display: grid;<br>
+                grid-template-columns: repeat(3, 200px);<br>
+                grid-template-rows: repeat(2, 200px);<br>
+                align-items: center;<br>
+            }<br><br>
+
+            El diseño para todos los items<br><br>
+            .grid__item2 {<br>
+                padding: 1%;<br>
+                font-size: 1.25rem;<br>
+                background-color: #666;<br>
+                border: 2px solid #999;<br>
+            }<br><br>
+        </h5>
+    </div>
+
+    <div class="grid__container2 grid__align2">
+        <div class="grid__item2"><p>Grid Item 1</p></div>
+        <div class="grid__item2"><p>Grid Item 2</p></div>
+        <div class="grid__item2"><p>Grid Item 3</p></div>
+        <div class="grid__item2"><p>Grid Item 4</p></div>
+        <div class="grid__item2"><p>Grid Item 5</p></div>
+    </div>
+
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">
+            Desde Inspeccionar elemento:
+        </h3>
+    </div>
+
+    <div class="content-img">
+        <img src="assets/align_items_center.jpg" alt="">
+    </div>
+    <!-- ------------ Align-Align-items ------------  -->
+
+    <!-- ------------ Align - Align-items and Justify-items ------------  -->
+    <h1 class="itemTitle">Grid Align - Align items and Justify items</h1>
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">
+            <br>
+            Observar los cambios desde "Inspeccionar Elementos"<br>
+            Alinear de manera vertical y horizontal usando en la clase contenedora o padre:<br>
+            align-items: center;<br>
+            justify-items: center;<br>
+            Se puede usar las propiedades de alineado de cada una de ellas
+        </h3>
+        <h5 class="itemInfo__example">
+            Contenedor Principal:<br><br>
+            .grid__container3 {<br>
+                margin: 0 auto;<br>
+                width: 80vw;<br>
+                height: 100vh;<br>
+                background-color: #222;<br>
+                border: medium solid #000;<br>
+            }<br><br>
+            
+            Contenedor de alineación:<br><br>
+            .grid__align3 {<br>
+                display: grid;<br>
+                grid-template-columns: repeat(3, 200px);<br>
+                grid-template-rows: repeat(2, 200px);<br>
+                align-items: center;<br>
+                justify-items: center;<br>
+            }<br><br>
+
+            El diseño para todos los items<br><br>
+            .grid__item3 {<br>
+                padding: 1%;<br>
+                font-size: 1.25rem;<br>
+                background-color: #666;<br>
+                border: 2px solid #999;<br>
+            }<br><br>  
+        </h5>
+    </div>
+
+    <div class="grid__container3 grid__align3">
+        <div class="grid__item3"><p>Grid Item 1</p></div>
+        <div class="grid__item3"><p>Grid Item 2</p></div>
+        <div class="grid__item3"><p>Grid Item 3</p></div>
+        <div class="grid__item3"><p>Grid Item 4</p></div>
+        <div class="grid__item3"><p>Grid Item 5</p></div>
+    </div>
+
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">
+            Desde Inspeccionar elemento:
+        </h3>
+    </div>
+
+    <div class="content-img">
+        <img src="assets/dos_posiciones.jpg" alt="">
+    </div>
+    <!-- ------------ Align - Align-items and Justify-items ------------  -->
+
+    <!-- ------------ Align - Alineando un hijo ------------  -->
+    <h1 class="itemTitle">Grid Align - Alineando un hijo</h1>
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">
+            <br>
+            Observar los cambios desde "Inspeccionar Elementos"<br>
+            Se realiza con las mismas propiedades que el padre, pero en vez de (align/justify)-ITEMS, va (align/justify)-SELF.
+        </h3>
+        <h5 class="itemInfo__example">
+            Contenedor Principal:<br><br>
+            .grid__container4 {<br>
+                margin: 0 auto;<br>
+                width: 80vw;<br>
+                height: 100vh;<br>
+                background-color: #222;<br>
+                border: medium solid #000;<br>
+            }<br><br>
+            
+            Contenedor de alineación:<br><br>
+            .grid__align4 {<br>
+                display: grid;<br>
+                grid-template-columns: repeat(3, 200px);<br>
+                grid-template-rows: repeat(2, 200px);<br>
+            }<br><br>
+
+            El diseño para todos los items<br><br>
+            .grid__item4 {<br>
+                padding: 1%;<br>
+                font-size: 1.25rem;<br>
+                background-color: #666;<br>
+                border: 2px solid #999;<br>
+            }<br><br>
+
+            El diseño para el item personalizado<br><br>
+            .grid__item4:nth-child(5) {<br>
+                padding: 1%;<br>
+                font-size: 1.25rem;<br>
+                background-color: #666;<br>
+                border: 2px solid #999;<br>
+                align-self: end;<br>
+                justify-self: center;<br>
+            }<br><br>
+        </h5>
+    </div>
+
+    <div class="grid__container4 grid__align4">
+        <div class="grid__item4"><p>Grid Item 1</p></div>
+        <div class="grid__item4"><p>Grid Item 2</p></div>
+        <div class="grid__item4"><p>Grid Item 3</p></div>
+        <div class="grid__item4"><p>Grid Item 4</p></div>
+        <div class="grid__item4"><p>Grid Item 5</p></div>
+    </div>
+
+    <div class="itemInfo">
+        <h3 class="itemInfo__title">
+            Desde Inspeccionar elemento:
+        </h3>
+    </div>
+
+    <div class="content-img">
+        <img src="assets/alineando-un-hijo.jpg" alt="">
+    </div>
+    <!-- ------------ Align - Alineando un hijo ------------  -->
+
+</body>
+</html>
