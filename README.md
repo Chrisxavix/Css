@@ -11,8 +11,7 @@ Contenido sobre el uso de CSS:
  * Tables
  * Shadow
  * Float
- * Vide
- 
-## Flex Box
+ * Video
+* Flex Box
+* Grid
 
-## Grid
