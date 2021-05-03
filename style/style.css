@@ -17,8 +17,9 @@ body {
     color: black;
     text-align: center;
 }
+
 .container {
-    height: 80%;
+    height: 95vh;
 }
 
 .main-container {
@@ -47,12 +48,11 @@ body {
 
 /* **************************************** FOOTER **************************************** */
 .footer {
-    position: relative;
-    padding: 0.5rem; 
+    height: 5vh;
     text-align: center;
     color: #fff;
     background-color: #14192d;
-    bottom: 0;
+    line-height: 5vh;
 }
 
 .footer small {
