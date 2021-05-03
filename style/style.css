@@ -17,6 +17,9 @@ body {
     color: black;
     text-align: center;
 }
+.container {
+    height: 80%;
+}
 
 .main-container {
     border: 1px solid black;
@@ -41,3 +44,24 @@ body {
     color: rgb(245, 239, 239);
     text-shadow: -0.2px -0.2px 0.2px #efeff5, 0.2px -0.2px 0.2px #efeff5, -0.2px 0.2px 0.2px #efeff5, 0.2px 0.2px 0.2px #efeff5;
 }
+
+/* **************************************** FOOTER **************************************** */
+.footer {
+    position: relative;
+    padding: 0.5rem; 
+    text-align: center;
+    color: #fff;
+    background-color: #14192d;
+    bottom: 0;
+}
+
+.footer small {
+    font-size: 13px;
+}
+
+.footer small  a {
+    margin-left: 5px;
+    color: #d90062;
+    font-weight: bold;
+}
+/* **************************************** FOOTER **************************************** */
