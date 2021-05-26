@@ -7,6 +7,8 @@
     <link rel="shortcut icon" href="https://chrisxavix.github.io/Css/assets/css.png" type="image/x-icon">
     <!-- Hojas de estilos -->
     <link rel="stylesheet" href="https://chrisxavix.github.io/Css/lessons/01-Position/Sticky/sticky.css">
+    <!-- Comment Code Style -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/Css/comment-code/prism.css">
     <!-- Datos -->
     <meta name="description" content="Es una mezcla entre position relative y fixed.">
     <link rel="apple-touch-icon" href="https://chrisxavix.github.io/Css/assets/css.png">
@@ -29,10 +31,33 @@
         <h3 class="itemInfo__title">Usando Position Sticky</h3>
         <h4 class="itemInfo__subtitle">Es una mezcla entre relative y fixed. <br>Conserva el espacio en el <flujo class="br">Al hacer Scroll se moverá hasta lo establecido.</flujo></h4>
         <h4 class="itemInfo__subtitle">Usando:</h4>
-        <h5 class="itemInfo__example">
-            
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-css">
+.slide {
+    width: 100%;
+    background: gray;
+    text-align: center;
+    font-size: 38px;
+    font-weight: bold;
+    padding: 20px;
+    /* Con line-height es como centrar o darle espacio entre la caja y el texto */
+    line-height: 130px;
+}
+
+.menu {
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    background: darkcyan;
+    padding: 20px;
+    width: 100%;
+    position: sticky;
+    /* Cuando se está en el top asigando se comporta como fixed, en 0 se ve bien xD */
+    top: 20px;
+}
+    </code></pre>
+
 
     <div class="slide">Slide</div>
     <div class="menu">MENÚ</div>
@@ -68,5 +93,8 @@
     <p class="text">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam unde qui, beatae ad eligendi deserunt deleniti, veniam harum possimus perferendis eaque fugit vitae recusandae. Asperiores sint commodi numquam? Ratione totam at maiores cum culpa earum aut! Possimus voluptates neque, quas beatae tempore quaerat! Distinctio quibusdam corporis amet! Facere, architecto expedita!
     </p>
+
+    <!-- Comment Code Style -->
+    <script src="https://chrisxavix.github.io/Css/comment-code/prism.js"></script>
 </body>
 </html>

@@ -8,6 +8,8 @@
     <!-- Hojas de estilos -->
     <link rel="stylesheet" href="https://chrisxavix.github.io/Css/style/reset.css">
     <link rel="stylesheet" href="https://chrisxavix.github.io/Css/lessons/01-Position/Relative/relative.css">
+    <!-- Comment Code Style -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/Css/comment-code/prism.css">
     <!-- Datos -->
     <meta name="description" content="Permite que la caja se pueda mover usando: top, right, bottom, left y z-index.">
     <link rel="apple-touch-icon" href="https://chrisxavix.github.io/Css/assets/css.png">
@@ -30,24 +32,24 @@
         <h3 class="itemInfo__title">Usando Position Relative</h3>
         <h4 class="itemInfo__subtitle">Al usar <i>(position: relative)</i> permite que la caja se pueda mover usando: top, right, bottom, left y z-index. <br>El z-index influye en quién va a sobreponer entre las cajas.</h4>
         <h4 class="itemInfo__subtitle">Usando:</h4>
-        <h5 class="itemInfo__example">
-            .box_1 {<br>
-                background: lightgreen;<br>
-                position: relative;<br>
-                top: 10px;<br>
-                left: 50px;<br>
-                z-index: 2;<br>
-            }
-        </h5><br>
-        <h5 class="itemInfo__example">
-            .box_2 {<br>
-                background: lightsalmon;<br>
-                position: relative;<br>
-                z-index: 1;<br>
-                top: -40px;<br>
-            }
-        </h5>
     </div>
+    
+    <pre style="font-size: 12px;"><code class="language-css">
+.box_1 {
+    background: lightgreen;
+    position: relative;
+    top: 10px;
+    left: 50px;
+    z-index: 2;
+}
+
+.box_2 {
+    background: lightsalmon;
+    position: relative;
+    z-index: 1;
+    top: -40px;
+}
+    </code></pre>
     
     <div class="box_1">BOX 1</div>
     
@@ -57,15 +59,16 @@
         <h3 class="itemInfo__title">Manteniendo la posición de la caja en el flujo.</h3>
         <h4 class="itemInfo__subtitle">Usar position relative permite mover a cualquier lugar la caja si perder el espacio creado en el flujo.</h4>
         <h4 class="itemInfo__subtitle">Usando:</h4>
-        <h5 class="itemInfo__example">
-            .box_3 {<br>
-                background: grey;<br>
-                position: relative;<br>
-                top: 60px;<br>
-                left: 90px;<br>
-            }
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-css">
+.box_3 {
+    background: grey;
+    position: relative;
+    top: 60px;
+    left: 90px;
+}
+    </code></pre>
 
     <h2>Título</h2>
 
@@ -76,5 +79,8 @@
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aperiam atque odit amet voluptates, veritatis eos doloremque recusandae quos molestias repellendus nulla impedit quae inventore nobis adipisci placeat ipsam est non quibusdam? Repudiandae, tempora id modi dolorem provident optio praesentium in enim ipsum ab quo repellendus et, veritatis iusto dolorum.
     </p>
+
+    <!-- Comment Code Style -->
+    <script src="https://chrisxavix.github.io/Css/comment-code/prism.js"></script>
 </body>
 </html>

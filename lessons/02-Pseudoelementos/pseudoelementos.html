@@ -8,6 +8,8 @@
     <!-- Hojas de estilos -->
     <link rel="stylesheet" href="https://chrisxavix.github.io/Css/style/reset.css">
     <link rel="stylesheet" href="https://chrisxavix.github.io/Css/lessons/02-Pseudoelementos/pseudoelementos.css">
+    <!-- Comment Code Style -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/Css/comment-code/prism.css">
     <!-- Datos -->
     <meta name="description" content="Aplicado en elementos de línea.">
     <link rel="apple-touch-icon" href="https://chrisxavix.github.io/Css/assets/css.png">
@@ -31,12 +33,16 @@
         <h3 class="itemInfo__title">La primera letra con diseño personalizado.</h3>
         <h4 class="itemInfo__subtitle">Usando:</h4>
         <h5 class="itemInfo__example">
-            .title::first-letter {<br>
-            color: rgb(78, 151, 4);<br>
-            font-size: 35px;<br>
-            }<br>
+            
         </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-css">
+.title::first-letter {
+    color: rgb(78, 151, 4);
+    font-size: 35px;
+}
+    </code></pre>
     <h1 class="title">Lorem ipsum dolor sit amet.</h1>
     <!-- ------------ Primera letra con diseño ------------  -->
 
@@ -44,14 +50,18 @@
     <div class="itemInfo">
         <h3 class="itemInfo__title">Al seleccionar con el mouse el párrafo se cambian los estilos. Background y color diferentes al predeterminado.</h3>
         <h4 class="itemInfo__subtitle">Usando:</h4>
-        <h5 class="itemInfo__example">
-            .text::selection{<br>
-                background-color: rgb(8, 27, 39);<br>
-                color: rgb(231, 240, 240);<br>
-            }<br>
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-css">
+.text::selection{
+    background-color: rgb(8, 27, 39);
+    color: rgb(231, 240, 240);
+}
+    </code></pre>
     <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur voluptatum officiis recusandae culpa temporibus laudantium, possimus hic beatae consectetur error?</p>
     <!-- ------------ Texto seleccionado con el mouse ------------  -->
+
+    <!-- Comment Code Style -->
+    <script src="https://chrisxavix.github.io/Css/comment-code/prism.js"></script>
 </body>
 </html>
