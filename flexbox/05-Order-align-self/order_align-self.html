@@ -8,6 +8,8 @@
     <!-- Hojas de estilos -->
     <link rel="stylesheet" href="https://chrisxavix.github.io/Css/style/normalize.css">
     <link rel="stylesheet" href="https://chrisxavix.github.io/Css/flexbox/05-Order-align-self/order_align-self.css">
+    <!-- Comment Code Style -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/Css/comment-code/prism.css">
     <!-- Datos -->
     <meta name="description" content="Ordena y personaliza un item del contenedor.">
     <link rel="apple-touch-icon" href="https://chrisxavix.github.io/Css/assets/css.png">
@@ -30,28 +32,30 @@
     <div class="itemInfo">
         <h3 class="itemInfo__title">Ordena las cajas.</h3>
         <h4 class="itemInfo__subtitle">Entrando en los hijos se le agrega: order: 1. 
-            <br>Por defecto las demás cajas agarran la posición 0.</h4>
-        <h5 class="itemInfo__example">
-            .containerOrder {<br>
-                height: 120px;<br>
-                background-color: blueviolet;<br>
-                display: flex;<br>
-            }<br><br>
-            
-            .itemOrder {<br>
-                border: 1px solid black;<br>
-                background-color: cadetblue;<br>
-            }<br>
-            
-            .itemOrder:nth-child(2) {<br>
-                order: 1;<br>
-            }<br><br>
-            
-            .itemOrder:nth-child(5) {<br>
-                order: 2;<br>
-            }<br>
-        </h5>
+            <br>Por defecto las demás cajas agarran la posición 0.
+        </h4>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-css">
+.containerOrder {
+    height: 120px;
+    background-color: blueviolet;
+    display: flex;
+}
+
+.itemOrder {
+    border: 1px solid black;
+    background-color: cadetblue;
+}
+
+.itemOrder:nth-child(2) {
+    order: 1;
+}
+
+.itemOrder:nth-child(5) {
+    order: 2;
+}
+    </code></pre>
 
     <section class="containerOrder">
         <article class="itemOrder">Item 1</article>
@@ -76,24 +80,26 @@
     <div class="itemInfo">
         <h3 class="itemInfo__title">Ordena las cajas.</h3>
         <h4 class="itemInfo__subtitle">Sobreescribe el valor de align-item. <br>
-            Por se debe entrar directo en los hijos.</h4>
-        <h5 class="itemInfo__example">
-            .containerAlign-Self {<br>
-                height: 120px;<br>
-                background-color: blueviolet;<br>
-                display: flex;<br>
-            }<br><br>
-            
-            .itemAlign-Self {<br>
-                border: 1px solid black;<br>
-                background-color: cadetblue;<br>
-            }<br>
-            
-            .itemAlign-Self:nth-child(2) {<br>
-                align-self: flex-start;<br>
-            }<br>
-        </h5>
+            Por se debe entrar directo en los hijos.
+        </h4>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-css">
+.containerAlign-Self {
+    height: 120px;
+    background-color: blueviolet;
+    display: flex;
+}
+
+.itemAlign-Self {
+    border: 1px solid black;
+    background-color: cadetblue;
+}
+
+.itemAlign-Self:nth-child(2) {
+    align-self: flex-start;
+}
+    </code></pre>
 
     <section class="containerAlign-Self">
         <article class="itemAlign-Self">Item 1</article>
@@ -112,5 +118,7 @@
     </section>
     <!-- ------------ Align Self ------------  -->
 
+    <!-- Comment Code Style -->
+    <script src="https://chrisxavix.github.io/Css/comment-code/prism.js"></script>
 </body>
 </html>

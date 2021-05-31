@@ -8,6 +8,8 @@
     <!-- Hojas de estilos -->
     <link rel="stylesheet" href="https://chrisxavix.github.io/Css/style/reset.css">
     <link rel="stylesheet" href="https://chrisxavix.github.io/Css/lessons/07-Video/video.css">
+    <!-- Comment Code Style -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/Css/comment-code/prism.css">
     <!-- Datos -->
     <meta name="description" content="Vídeo responsive con un frame de youtube.">
     <link rel="apple-touch-icon" href="https://chrisxavix.github.io/Css/assets/css.png">
@@ -28,36 +30,33 @@
     <!-- ------------ Video Opción 1 ------------  -->
     <div class="itemInfo">
         <h3 class="itemInfo__title">Video, Opción 1</h3>
-        <h4 class="itemInfo__subtitle">Usando en el container principal:</h4>
-        <h5 class="itemInfo__example">
-            .container {<br>
-                margin-top: 20px;<br>
-                width: 80%;<br>
-                margin-left: auto;<br>
-                margin-right: auto;<br>
-                min-width: 320px;<br>
-                max-width: 1400px;<br>
-            }<br>
-        </h5>
-
-        <h4 class="itemInfo__subtitle">Usando en el container del video:</h4>
-        <h5 class="itemInfo__example">
-            .video { <br>
-                height: 0;<br>
-                padding-bottom: 56.25%;<br>
-                position: relative;<br>
-            }<br>
-        </h5>
-
-        <h4 class="itemInfo__subtitle">Usando en el frame:</h4>
-        <h5 class="itemInfo__example">
-            .video iframe {<br>
-                position: absolute;<br>
-                width: 100%;<br>
-                height: 100%;<br>
-            }<br>
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-css">
+/* Usando en el container principal */
+.container {
+    margin-top: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 320px;
+    max-width: 1400px;
+}
+
+/* Usando en el container del video */
+.video {
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+/* Usando en el frame */
+.video iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+    </code></pre>
 
     <div class="container">
         <div class="video">
@@ -71,32 +70,34 @@
     <!-- ------------ Video Opción 2 ------------  -->
     <div class="itemInfo">
         <h3 class="itemInfo__title">Video, Opción 2</h3>
-        <h4 class="itemInfo__subtitle">Usando en el container principal con video-responsive:</h4>
-        <h5 class="itemInfo__example">
-            .video-responsive {<br>
-                height: 0;<br>
-                overflow: hidden;<br>
-                padding-bottom: 56.25%;<br>
-                padding-top: 30px;<br>
-                position: relative;<br>
-            }<br>
-        </h5>
-
-        <h4 class="itemInfo__subtitle">Usando en el hijo del container:</h4>
-        <h5 class="itemInfo__example">
-            .video-responsive iframe, .video-responsive object, .video-responsive embed {<br>
-                height: 100%;<br>
-                left: 0;<br>
-                position: absolute;<br>
-                top: 0;<br>
-                width: 100%;<br>
-            }<br>
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-css">
+/* Usando en el container principal con video-responsive */
+.video-responsive {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    position: relative;
+}
+
+/* Usando en el hijo del container */
+.video-responsive iframe, .video-responsive object, .video-responsive embed {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+    </code></pre>
 
     <div class="video-responsive">
         <iframe src="https://www.youtube.com/embed/Dym1Q1gr0FI" frameborder="0" allowfullscreen></iframe>
     </div>
     <!-- ------------ Video Opción 2 ------------  -->
+
+    <!-- Comment Code Style -->
+    <script src="https://chrisxavix.github.io/Css/comment-code/prism.js"></script>
 </body>
 </html>

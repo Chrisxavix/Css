@@ -8,6 +8,8 @@
     <!-- Hojas de estilos -->
     <link rel="stylesheet" href="https://chrisxavix.github.io/Css/style/reset.css">
     <link rel="stylesheet" href="https://chrisxavix.github.io/Css/lessons/06-Float/float.css">
+    <!-- Comment Code Style -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/Css/comment-code/prism.css">
     <!-- Datos -->
     <meta name="description" content="Alinear una imagen con un texto con float.">
     <link rel="apple-touch-icon" href="https://chrisxavix.github.io/Css/assets/css.png">
@@ -29,30 +31,32 @@
     <div class="itemInfo">
         <h3 class="itemInfo__title">Alinear una imagen con un texto con float.</h3>
         <h4 class="itemInfo__subtitle">En el contenedor se usa:</h4>
-        <h5 class="itemInfo__example">
-            .float {<br>
-                margin-top: 20px;<br>
-                background-color: gray;<br>
-                border: 3px solid rgb(190, 127, 33);<br>
-                overflow: hidden;<br>
-            }<br>
-        </h5>
-
-        <h4 class="itemInfo__subtitle">En la imagen:</h4>
-        <h5 class="itemInfo__example">
-            .img {<br>
-                max-width: 30%;<br>
-                float: right;<br>
-                margin: 40px 10px;<br>
-            }<br>
-        </h5>
     </div>
    
+    <pre style="font-size: 12px;"><code class="language-css">
+.float {
+    margin-top: 20px;
+    background-color: gray;
+    border: 3px solid rgb(190, 127, 33);
+    overflow: hidden;
+}
+
+/* En la imagen: */
+.img {
+    max-width: 30%;
+    float: right;
+    margin: 40px 10px;
+}
+    </code></pre>
+
     <article class="float">
         <img src="./assets/forest.jpg" alt="" class="img">
         <h3>Title</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam vel fugit nihil eos, ea beatae possimus eum, alias officiis in, magnam soluta! Saepe expedita quos dolor culpa, veniam modi magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam vel fugit nihil eos, ea beatae possimus eum, alias officiis in, magnam soluta! Saepe expedita quos dolor culpa, veniam modi magnam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam vel fugit nihil eos, ea beatae possimus eum, alias officiis in, magnam soluta! Saepe expedita quos dolor culpa, veniam modi magnam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus perferendis vitae unde neque nulla corrupti nihil consequuntur odit tempore, maxime harum tempora asperiores? Aut asperiores iure consectetur illum iste distinctio quos sapiente labore dolorum a quia suscipit, sunt voluptatum aliquid.</p>
     </article>
     <!-- ------------ Alinear una imagen con un texto con float ------------  -->
+
+    <!-- Comment Code Style -->
+    <script src="https://chrisxavix.github.io/Css/comment-code/prism.js"></script>
 </body>
 </html>

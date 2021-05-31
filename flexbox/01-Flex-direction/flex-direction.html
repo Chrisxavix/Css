@@ -8,6 +8,8 @@
     <!-- Hojas de estilos -->
     <link rel="stylesheet" href="https://chrisxavix.github.io/Css/style/normalize.css">
     <link rel="stylesheet" href="https://chrisxavix.github.io/Css/flexbox/01-Flex-direction/flex-direction.css">
+    <!-- Comment Code Style -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/Css/comment-code/prism.css">
     <!-- Datos -->
     <meta name="description" content="Flex tiene cuatro direcciones, como: row, row-reverse, column y column-reverse">
     <link rel="apple-touch-icon" href="https://chrisxavix.github.io/Css/assets/css.png">
@@ -30,14 +32,15 @@
     <div class="itemInfo">
         <h3 class="itemInfo__title">El display flex-box por defecto tiene row</h3>
         <h4 class="itemInfo__subtitle">Usando:</h4>
-        <h5 class="itemInfo__example">
-            .container_row {<br>
-                height: 120px;<br>
-                background-color: blueviolet;<br>
-                display: flex;<br>
-            }<br>
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-css">
+.container_row {
+    height: 120px;
+    background-color: blueviolet;
+    display: flex;
+}
+    </code></pre>
 
     <section class="container_row">
         <article class="item_row">Item 1</article>
@@ -50,15 +53,16 @@
     <div class="itemInfo">
         <h3 class="itemInfo__title">Row-reverse</h3>
         <h4 class="itemInfo__subtitle">Usando:</h4>
-        <h5 class="itemInfo__example">
-            .container_row-reverse {<br>
-                height: 120px;<br>
-                background-color: blueviolet;<br>
-                display: flex;<br>
-                flex-direction: row-reverse;<br>
-            }<br>
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-css">
+.container_row-reverse {
+    height: 120px;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row-reverse;
+}
+    </code></pre>
 
     <section class="container_row-reverse">
         <article class="item_row-reverse">Item 1</article>
@@ -71,20 +75,21 @@
     <div class="itemInfo">
         <h3 class="itemInfo__title">Al usar row-reverse los items empiezan diferente manera, por lo que se puede ordenar</h3>
         <h4 class="itemInfo__subtitle">Usando:</h4>
-        <h5 class="itemInfo__example">
-            .item_row-reverse-order:nth-child(1) {<br>
-                order: 3;<br>
-            }<br><br>
-            
-            .item_row-reverse-order:nth-child(2) {<br>
-                order: 2;<br>
-            }<br><br>
-            
-            .item_row-reverse-order:nth-child(3) {<br>
-                order: 1;<br>
-            }<br>
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-css">
+.item_row-reverse-order:nth-child(1) {
+    order: 3;
+}
+
+.item_row-reverse-order:nth-child(2) {
+    order: 2;
+}
+
+.item_row-reverse-order:nth-child(3) {
+    order: 1;
+}
+    </code></pre>
 
     <section class="container_row-reverse-order">
         <article class="item_row-reverse-order">Item 1</article>
@@ -97,15 +102,16 @@
     <div class="itemInfo">
         <h3 class="itemInfo__title">Column</h3>
         <h4 class="itemInfo__subtitle">Usando:</h4>
-        <h5 class="itemInfo__example">
-            .container_column {<br>
-                height: 120px;<br>
-                background-color: blueviolet;<br>
-                display: flex;<br>
-                flex-direction: column;<br>
-            }<br>
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-css">
+.container_column {
+    height: 120px;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+}
+    </code></pre>
 
     <section class="container_column">
         <article class="item_column">Item 1</article>
@@ -118,15 +124,16 @@
     <div class="itemInfo">
         <h3 class="itemInfo__title">Column</h3>
         <h4 class="itemInfo__subtitle">Usando:</h4>
-        <h5 class="itemInfo__example">
-            .container_column-reverse {<br>
-                height: 120px;<br>
-                background-color: blueviolet;<br>
-                display: flex;<br>
-                flex-direction: column-reverse;<br>
-            }<br>
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-css">
+.container_column-reverse {
+    height: 120px;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column-reverse;
+}
+    </code></pre>
 
     <section class="container_column-reverse">
         <article class="item_column-reverse">Item 1</article>
@@ -159,6 +166,25 @@
         </h5>
     </div>
 
+    <pre style="font-size: 12px;"><code class="language-css">
+.item_column-reverse-order {
+    background-color: cadetblue;
+    margin: 3px 0;
+}
+
+.item_column-reverse-order:nth-child(1) {
+    order: 3;
+}
+
+.item_column-reverse-order:nth-child(2) {
+    order: 2;
+}
+
+.item_column-reverse-order:nth-child(3) {
+    order: 1;
+}
+    </code></pre>
+
     <section class="container_column-reverse-order">
         <article class="item_column-reverse-order">Item 1</article>
         <article class="item_column-reverse-order">Item 2</article>
@@ -170,20 +196,22 @@
     <div class="itemInfo">
         <h3 class="itemInfo__title">Flex Wrap: Manda a la siguiente fila cuando no caben.</h3>
         <h4 class="itemInfo__subtitle">Usando:</h4>
-        <h5 class="itemInfo__example">
-            .container-wrap {<br>
-                height: auto;<br>
-                background-color: blueviolet;<br>
-                display: flex;<br>
-                flex-wrap: wrap;<br>
-            }<br><br>
-            
-            .item-wrap {<br>
-                width: 150px;<br>
-                border: 1px solid black;<br>
-                background-color: cadetblue;<br>
-            }<br>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-css">
+.container-wrap {
+    height: auto;
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item-wrap {
+    width: 150px;
+    border: 1px solid black;
+    background-color: cadetblue;
+}
+    </code></pre>
 
     <section class="container-wrap">
         <article class="item-wrap">Item 1</article>
@@ -205,5 +233,8 @@
         <article class="item-wrap">Item 17</article>
     </section>
     <!-- ------------ Flex Box con flex-wrap ------------  -->
+
+    <!-- Comment Code Style -->
+    <script src="https://chrisxavix.github.io/Css/comment-code/prism.js"></script>
 </body>
 </html>

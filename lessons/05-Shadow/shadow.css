@@ -2,7 +2,7 @@
 body {
     background-image: radial-gradient(rgb(189, 180, 180), rgb(103, 104, 59));
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100%;
 }
 
 .itemTitle {

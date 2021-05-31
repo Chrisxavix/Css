@@ -8,6 +8,8 @@
     <!-- Hojas de estilos -->
     <link rel="stylesheet" href="https://chrisxavix.github.io/Css/style/normalize.css">
     <link rel="stylesheet" href="https://chrisxavix.github.io/Css/flexbox/03-Align-item/align-item.css">
+    <!-- Comment Code Style -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/Css/comment-code/prism.css">
     <!-- Datos -->
     <meta name="description" content="Alineación en el eje vertical.">
     <link rel="apple-touch-icon" href="https://chrisxavix.github.io/Css/assets/css.png">
@@ -31,16 +33,17 @@
     <div class="itemInfo">
         <h3 class="itemInfo__title">Alineación de los elementos hijos.</h3>
         <h4 class="itemInfo__subtitle">Usando align-items: center</h4>
-        <h5 class="itemInfo__example">
-            .containerAlignItems_Center {<br>
-                background-color: blueviolet;<br>
-                height: 150px;<br>
-                display: flex;<br>
-                flex-direction: row;<br>
-                align-items: center;<br>
-            }<br>
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-css">
+.containerAlignItems_Center {
+    background-color: blueviolet;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+    </code></pre>
 
     <section class="containerAlignItems_Center">
         <article class="itemAlignItems_Center">Item 1</article>
@@ -63,16 +66,17 @@
     <div class="itemInfo">
         <h3 class="itemInfo__title">Alineación de los elementos hijos.</h3>
         <h4 class="itemInfo__subtitle">Usando align-items: flex-end</h4>
-        <h5 class="itemInfo__example">
-            .containerAlignItems_Flex-End {<br>
-                background-color: blueviolet;<br>
-                height: 150px;<br>
-                display: flex;<br>
-                flex-direction: row;<br>
-                align-items: flex-end;<br>
-            }<br>
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-css">
+.containerAlignItems_Flex-End {
+    background-color: blueviolet;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+    </code></pre>
 
     <section class="containerAlignItems_Flex-End">
         <article class="itemAlignItems_Flex-End">Item 1</article>
@@ -95,16 +99,17 @@
     <div class="itemInfo">
         <h3 class="itemInfo__title">Alineación de los elementos hijos.</h3>
         <h4 class="itemInfo__subtitle">Usando align-items: flex-start</h4>
-        <h5 class="itemInfo__example">
-            .containerAlignItems_Flex-Start {<br>
-                background-color: blueviolet;<br>
-                height: 150px;<br>
-                display: flex;<br>
-                flex-direction: row;<br>
-                align-items: flex-start;<br>
-            }<br>
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-css">
+.containerAlignItems_Flex-Start {
+    background-color: blueviolet;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+    </code></pre>
 
     <section class="containerAlignItems_Flex-Start">
         <article class="itemAlignItems_Flex-Start">Item 1</article>
@@ -127,26 +132,27 @@
     <div class="itemInfo">
         <h3 class="itemInfo__title">Alineación de los elementos hijos, se alinean de acuerdo al texto inicial.</h3>
         <h4 class="itemInfo__subtitle">Usando align-items: baseline</h4>
-        <h5 class="itemInfo__example">
-            .containerAlignItems_Flex-Baseline {<br>
-                background-color: blueviolet;<br>
-                height: 150px;<br>
-                display: flex;<br>
-                flex-direction: row;<br>
-                align-items: baseline;<br>
-            }<br><br>
-            
-            .itemAlignItems_Flex-Baseline {<br>
-                width: 70px;<br>
-                border: 1px solid black;<br>
-                background-color: cadetblue;<br>
-            }<br><br>
-            
-            .itemAlignItems_Flex-Baseline:nth-child(4) {<br>
-                font-size: 20px;<br>
-            }<br>
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-css">
+.containerAlignItems_Flex-Baseline {
+    background-color: blueviolet;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.itemAlignItems_Flex-Baseline {
+    width: 70px;
+    border: 1px solid black;
+    background-color: cadetblue;
+}
+
+.itemAlignItems_Flex-Baseline:nth-child(4) {
+    font-size: 20px;
+}
+    </code></pre>
 
     <section class="containerAlignItems_Flex-Baseline">
         <article class="itemAlignItems_Flex-Baseline">Item 1</article>
@@ -169,5 +175,7 @@
         <img src="assets/align_items.png" alt="">
     </div>
 
+    <!-- Comment Code Style -->
+    <script src="https://chrisxavix.github.io/Css/comment-code/prism.js"></script>
 </body>
 </html>

@@ -8,6 +8,8 @@
     <!-- Hojas de estilos -->
     <link rel="stylesheet" href="https://chrisxavix.github.io/Css/style/reset.css">
     <link rel="stylesheet" href="https://chrisxavix.github.io/Css/lessons/04-Tables/tables.css">
+    <!-- Comment Code Style -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/Css/comment-code/prism.css">
     <!-- Datos -->
     <meta name="description" content="Diferentes maneras de diseñar tablas.">
     <link rel="apple-touch-icon" href="https://chrisxavix.github.io/Css/assets/css.png">
@@ -29,28 +31,26 @@
     <div class="itemInfo">
         <h3 class="itemInfo__title">Tabla centrada</h3>
         <h4 class="itemInfo__subtitle">Usando:</h4>
-        <h5 class="itemInfo__example">
-            .table {<br>
-                margin: 20px 0;<br>
-                table-layout: auto;<br>
-                text-align: center; | right | left | Centrar los items<br>
-                width: 80%;<br>
-                background-color: rgb(93, 95, 94);<br>
-                margin-right: auto;<br>
-                margin-left: auto;<br>
-                border: 1px solid steelblue;<br>
-            }
-        </h5>
-
-        <h3 class="itemInfo__title">Alineando a la izquierda la primera columna</h3>
-        <h4 class="itemInfo__subtitle">Usando:</h4>
-        <h5 class="itemInfo__example">
-            .table__head { <br>
-                border: 1px solid steelblue; <br>
-                text-align: right; | center | left | Alinear items <br>
-            } <br>
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-css">
+.table {
+    margin: 20px 0;
+    table-layout: auto;
+    text-align: center; | right | left | Centrar los items
+    width: 80%;
+    background-color: rgb(93, 95, 94);
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid steelblue;
+}
+
+/* Alineando a la izquierda la primera columna */
+.table__head {
+    border: 1px solid steelblue;
+    text-align: right; | center | left | Alinear items
+}
+    </code></pre>
 
     <table class="table">
         <thead>
@@ -96,21 +96,22 @@
     <div class="itemInfo">
         <h3 class="itemInfo__title">Tabla con una imagen de fondo</h3>
         <h4 class="itemInfo__subtitle">Usando:</h4>
-        <h5 class="itemInfo__example">
-            .table1 { <br>
-                margin: 20px 0;<br>
-                table-layout: auto;<br>
-                text-align: center;<br>
-                width: 80%;<br>
-                background-image: url(./assets/cloud.jpg);<br>
-                background-size: cover;<br>
-                margin-right: auto;<br>
-                margin-left: auto;<br>
-                border: 1px solid black;<br>
-                border-spacing: 16px;<br>
-            }<br>
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-css">
+.table1 {
+    margin: 20px 0;
+    table-layout: auto;
+    text-align: center;
+    width: 80%;
+    background-image: url(./assets/cloud.jpg);
+    background-size: cover;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid black;
+    border-spacing: 16px;
+}
+    </code></pre>
 
     <table class="table1">
         <thead>
@@ -157,12 +158,13 @@
         <h3 class="itemInfo__title">Tabla con deslizador para pantallas móviles</h3>
         <h4 class="itemInfo__subtitle">Hace que aparezca un scroll en la tabla cuando es pequeña la pantalla, agregando un contenedor a la tabla</h4>
         <h4 class="itemInfo__subtitle">Usando:</h4>
-        <h5 class="itemInfo__example">
-            .table-container { <br>
-                overflow-x: auto;<br>
-            }<br>
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-css">
+.table-container {
+    overflow-x: auto;
+}
+    </code></pre>
 
     <div class="table-container">
         <table class="table2"> 
@@ -211,15 +213,16 @@
         <h3 class="itemInfo__title">Tabla con una celda que incluye imagen y texto, usando display: flex</h3>
         <h4 class="itemInfo__subtitle">Usamos un contenedor con hijos (imagen | texto) para darle flex a la celda donde se requiere acomodar</h4>
         <h4 class="itemInfo__subtitle">Usando:</h4>
-        <h5 class="itemInfo__example">
-            .containerFlex {<br>
-                display: flex;<br>
-                align-items: center;<br>
-                justify-content: center;<br>
-                margin: 5px;<br>
-            }<br>
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-css">
+.containerFlex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+    </code></pre>
 
     <div class="table-container1">
         <table class="table3">
@@ -267,5 +270,8 @@
         </table>
     </div>
     <!-- ------------ Tabla con una celda que incluye imagen y texto, usando display: flex ------------  -->
+
+    <!-- Comment Code Style -->
+    <script src="https://chrisxavix.github.io/Css/comment-code/prism.js"></script>
 </body>
 </html>

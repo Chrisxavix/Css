@@ -8,6 +8,8 @@
     <!-- Hojas de estilos -->
     <link rel="stylesheet" href="https://chrisxavix.github.io/Css/style/reset.css">
     <link rel="stylesheet" href="https://chrisxavix.github.io/Css/lessons/03-Lists/lists.css">
+    <!-- Comment Code Style -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/Css/comment-code/prism.css">
     <!-- Datos -->
     <meta name="description" content="Listar elementos de diferentes maneras.">
     <link rel="apple-touch-icon" href="https://chrisxavix.github.io/Css/assets/css.png">
@@ -30,12 +32,13 @@
         <h3 class="itemInfo__title">Estilos de numeración con las listas</h3>
         <h4 class="itemInfo__subtitle">Existen diversos, como: disc, circle, square, decimal, decimal-leading-zero, lower-roman, upper-roman, lower-greek, lower-latin, upper-latin,           armenian, georgian, lower-alpha, upper-alpha, none</h4>
         <h4 class="itemInfo__subtitle">Usando:</h4>
-        <h5 class="itemInfo__example">
-            .list {<br>
-                list-style-type: decimal-leading-zero;<br>
-            }<br>
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-css">
+.list {
+    list-style-type: decimal-leading-zero;
+}
+    </code></pre>
 
     <ul class="list">
         <li>Item 1</li>
@@ -50,15 +53,16 @@
     <div class="itemInfo">
         <h3 class="itemInfo__title">Reseteo de una lista</h3>
         <h4 class="itemInfo__subtitle">Usando:</h4>
-        <h5 class="itemInfo__example">
-            .listReset{<br>
-                margin-top: 0;<br>
-                margin-bottom: 0;<br>
-                padding-left: 0;<br>
-                list-style: none;<br>
-            }<br>
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-css">
+.listReset{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+    </code></pre>
 
     <ul class="listReset">
         <li>Item 1</li>
@@ -74,28 +78,25 @@
         <h3 class="itemInfo__title">Listado con una imagen personalizada</h3>
         <h4 class="itemInfo__subtitle">Primero se resetea la clase contenedora</h4>
         <h4 class="itemInfo__subtitle">Usando:</h4>
-        <h5 class="itemInfo__example">
-            .listImage {<br>
-                list-style-type: none;<br>
-            }<br>
-        </h5>
-
-
-        <h4 class="itemInfo__subtitle">Darle estilos a los items de la clase contenedora</h4>
-        <h4 class="itemInfo__subtitle">Usando:</h4>
-        <h5 class="itemInfo__example">
-            .listImage__item {<br>
-                background-image: url(./assets/check.png);<br>
-                background-repeat: no-repeat;<br>
-                background-position: 0 0;<br>
-                background-size: contain;<br>
-                display: block;<br>
-                height: 20px;<br>
-                padding-left: 25px;<br>
-                margin-top: 20px;<br>
-            }<br>
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-css">
+.listImage {
+    list-style-type: none;
+}
+
+/* Darle estilos a los items de la clase contenedora */
+.listImage__item {
+    background-image: url(./assets/check.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+    display: block;
+    height: 20px;
+    padding-left: 25px;
+    margin-top: 20px;
+}
+    </code></pre>
     
     <ul class="listImage">
         <li class="listImage__item">Item 1</li>
@@ -105,5 +106,8 @@
         <li class="listImage__item">Item 5</li>
     </ul>
     <!-- ------------ Listado con Imágenes ------------  -->
+
+    <!-- Comment Code Style -->
+    <script src="https://chrisxavix.github.io/Css/comment-code/prism.js"></script>
 </body>
 </html>
