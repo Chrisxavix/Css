@@ -8,6 +8,8 @@
     <!-- Hojas de estilos -->
     <link rel="stylesheet" href="https://chrisxavix.github.io/Css/style/reset.css">
     <link rel="stylesheet" href="https://chrisxavix.github.io/Css/grid/04-Grid-dense/grid-dense.css">
+    <!-- Comment Code Style -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/Css/comment-code/prism.css">
     <!-- Datos -->
     <meta name="description" content="Para espacios sobrantes en el grid.">
     <link rel="apple-touch-icon" href="https://chrisxavix.github.io/Css/assets/css.png">
@@ -28,20 +30,21 @@
     <!-- ------------ Grid Dense ------------  -->
     <div class="itemInfo">
         <h3 class="itemInfo__title">Grid asignada con valores y espacios sobrantes.</h3>
-        <h5 class="itemInfo__example">
-            .gridDense {<br>
-                display: grid;<br>
-                grid-template-columns: repeat(5, 1fr);<br>
-                grid-template-rows: repeat(3, 200px);<br>
-            }<br><br>
-            
-            .gridItem:nth-child(9) {<br>
-                background-color: blueviolet;<br>
-                grid-column: span 3;<br>
-                grid-row: span 3;<br>
-            }<br>
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-css">
+.gridDense {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 200px);
+}
+
+.gridItem:nth-child(9) {
+    background-color: blueviolet;
+    grid-column: span 3;
+    grid-row: span 3;
+}
+    </code></pre>
 
     <div class="gridContainer gridDense">
         <div class="gridItem"><p>Grid Item 1</p></div>
@@ -66,21 +69,22 @@
     <div class="itemInfo">
         <h3 class="itemInfo__title">Rellenar los espacios sobrantes.</h3>
         <h4 class="itemInfo__subtitle">Usando grid-auto-flow: dense;</h4>
-        <h5 class="itemInfo__example">
-            .gridDense1 {<br>
-                display: grid;<br>
-                grid-template-columns: repeat(5, 1fr);<br>
-                grid-template-rows: repeat(3, 200px);<br>
-                grid-auto-flow: dense;<br>
-            }<br><br>
-            
-            .gridItem1:nth-child(9) {<br>
-                background-color: blueviolet;<br>
-                grid-column: span 3;<br>
-                grid-row: span 3;<br>
-            }<br>
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-css">
+.gridDense1 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-auto-flow: dense;
+}
+
+.gridItem1:nth-child(9) {
+    background-color: blueviolet;
+    grid-column: span 3;
+    grid-row: span 3;
+}
+    </code></pre>
 
     <div class="gridContainer1 gridDense1">
         <div class="gridItem1"><p>Grid Item 1</p></div>
@@ -104,22 +108,23 @@
     <!-- ------------ Grid Dense Flow ------------  -->
     <div class="itemInfo">
         <h3 class="itemInfo__title">Rellenar los espacios sobrantes y darle medidas.</h3>
-        <h5 class="itemInfo__example">
-            .gridDenseFlow {<br>
-                display: grid;<br>
-                grid-template-columns: repeat(5, 1fr);<br>
-                grid-template-rows: repeat(3, 200px);<br>
-                grid-auto-flow: dense;<br>
-                grid-auto-rows: 200px;<br>
-            }<br><br>
-            
-            .gridItemDenseFlow:nth-child(9) {<br>
-                background-color: rgb(16, 13, 19);<br>
-                grid-column: span 3;<br>
-                grid-row: span 3;<br>
-            }<br>
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-css">
+.gridDenseFlow {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    grid-auto-flow: dense;
+    grid-auto-rows: 200px;
+}
+
+.gridItemDenseFlow:nth-child(9) {
+    background-color: rgb(16, 13, 19);
+    grid-column: span 3;
+    grid-row: span 3;
+}
+    </code></pre>
 
     <div class="gridContainerDenseFlow gridDenseFlow">
         <div class="gridItemDenseFlow"><p>Grid Item 1</p></div>
@@ -144,5 +149,7 @@
     </div>
     <!-- ------------ Grid Dense Flow ------------  -->
     
+    <!-- Comment Code Style -->
+    <script src="https://chrisxavix.github.io/Css/comment-code/prism.js"></script>
 </body>
 </html>

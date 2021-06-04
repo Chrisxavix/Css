@@ -8,6 +8,8 @@
     <!-- Hojas de estilos -->
     <link rel="stylesheet" href="https://chrisxavix.github.io/Css/style/reset.css">
     <link rel="stylesheet" href="https://chrisxavix.github.io/Css/grid/05-Order-align/order-align.css">
+    <!-- Comment Code Style -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/Css/comment-code/prism.css">
     <!-- Datos -->
     <meta name="description" content="Ordena y personaliza en los items hijos.">
     <link rel="apple-touch-icon" href="https://chrisxavix.github.io/Css/assets/css.png">
@@ -29,43 +31,44 @@
     <div class="itemInfo">
         <h3 class="itemInfo__title">Por defecto el ordenamiento lo trae en: order: 0; <br>Para cambiar el orden se entra en el item hijo, y se asigna el valor de 1 en adelante para posicionar:
         </h3>
-        <h5 class="itemInfo__example">
-            Contenedor Principal:<br><br>
-            .grid__container {<br>
-                margin: 0 auto;<br>
-                width: 80vw;<br>
-                height: 100vh;<br>
-                background-color: #222;<br>
-                border: medium solid #000;<br>
-            }<br><br>
-
-            Contenedor de Orden<br><br>
-            .grid__order {<br>
-                display: grid;<br>
-                grid-template-columns: repeat(3, 1fr);<br>
-                grid-template-rows: repeat(2, 1fr);<br>
-            }<br><br>
-
-            El diseño para todos los items<br><br>
-            .grid__item {<br>
-                padding: 1%;<br>
-                font-size: 1.25rem;<br>
-                background-color: #666;<br>
-                border: 2px solid #999;<br>
-            }<br><br>
-
-            Dar el orden a items específicos<br><br> 
-            .grid__item:nth-child(3) {<br>
-                background-color: rgb(128, 36, 36);<br>
-                order: 1;<br>
-            }<br><br>
-            
-            .grid__item:nth-child(2) {<br>
-                background-color: rgb(36, 128, 100);<br>
-                order: 2;<br>
-            }<br><br>
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-css">
+/* Contenedor Principal */
+.grid__container {
+    margin: 0 auto;
+    width: 80vw;
+    height: 100vh;
+    background-color: #222;
+    border: medium solid #000;
+}
+
+/* Contenedor de Orden */
+.grid__order {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+/* El diseño para todos los items */
+.grid__item {
+    padding: 1%;
+    font-size: 1.25rem;
+    background-color: #666;
+    border: 2px solid #999;
+}
+
+/* Dar el orden a items específicos */
+.grid__item:nth-child(3) {
+    background-color: rgb(128, 36, 36);
+    order: 1;
+}
+
+.grid__item:nth-child(2) {
+    background-color: rgb(36, 128, 100);
+    order: 2;
+}
+    </code></pre>
 
     <div class="grid__container grid__order">
         <div class="grid__item"><p>Grid Item 1</p></div>
@@ -85,33 +88,34 @@
             justify-items: center;<br>
             Puede ser: justify-items: center; / start / end
         </h3>
-        <h5 class="itemInfo__example">
-            Contenedor Principal:<br><br>
-            .grid__container1 {<br>
-                margin: 0 auto;<br>
-                width: 80vw;<br>
-                height: 100vh;<br>
-                background-color: #222;<br>
-                border: medium solid #000;<br>
-            }<br><br>
-
-            Contenedor de alineación:<br><br>
-            .grid__align {<br>
-                display: grid;<br>
-                grid-template-columns: repeat(3, 200px);<br>
-                grid-template-rows: repeat(2, 200px);<br>
-                justify-items: center;<br>
-            }<br><br>
-
-            El diseño para todos los items<br><br>
-            .grid__item1 {<br>
-                padding: 1%;<br>
-                font-size: 1.25rem;<br>
-                background-color: #666;<br>
-                border: 2px solid #999;<br>
-            }<br><br>
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-css">
+/* Contenedor Principal */
+.grid__container1 {
+    margin: 0 auto;
+    width: 80vw;
+    height: 100vh;
+    background-color: #222;
+    border: medium solid #000;
+}
+
+/* Contenedor de alineación */
+.grid__align {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(2, 200px);
+    justify-items: center;
+}
+
+/* El diseño para todos los items */
+.grid__item1 {
+    padding: 1%;
+    font-size: 1.25rem;
+    background-color: #666;
+    border: 2px solid #999;
+}
+    </code></pre>
 
     <div class="grid__container1 grid__align">
         <div class="grid__item1"><p>Grid Item 1</p></div>
@@ -142,33 +146,34 @@
             align-items: center;<br>
             Puede ser: align-items: center; / start / end
         </h3>
-        <h5 class="itemInfo__example">
-            Contenedor Principal:<br><br>
-            .grid__container2 {<br>
-                margin: 0 auto;<br>
-                width: 80vw;<br>
-                height: 100vh;<br>
-                background-color: #222;<br>
-                border: medium solid #000;<br>
-            }<br><br>
-
-            Contenedor de alineación:<br><br>
-            .grid__align2 {<br>
-                display: grid;<br>
-                grid-template-columns: repeat(3, 200px);<br>
-                grid-template-rows: repeat(2, 200px);<br>
-                align-items: center;<br>
-            }<br><br>
-
-            El diseño para todos los items<br><br>
-            .grid__item2 {<br>
-                padding: 1%;<br>
-                font-size: 1.25rem;<br>
-                background-color: #666;<br>
-                border: 2px solid #999;<br>
-            }<br><br>
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-css">
+/* Contenedor Principal */
+.grid__container2 {
+    margin: 0 auto;
+    width: 80vw;
+    height: 100vh;
+    background-color: #222;
+    border: medium solid #000;
+}
+
+/* Contenedor de alineación */
+.grid__align2 {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(2, 200px);
+    align-items: center;
+}
+
+/* El diseño para todos los items */
+.grid__item2 {
+    padding: 1%;
+    font-size: 1.25rem;
+    background-color: #666;
+    border: 2px solid #999;
+}
+    </code></pre>
 
     <div class="grid__container2 grid__align2">
         <div class="grid__item2"><p>Grid Item 1</p></div>
@@ -200,34 +205,35 @@
             justify-items: center;<br>
             Se puede usar las propiedades de alineado de cada una de ellas
         </h3>
-        <h5 class="itemInfo__example">
-            Contenedor Principal:<br><br>
-            .grid__container3 {<br>
-                margin: 0 auto;<br>
-                width: 80vw;<br>
-                height: 100vh;<br>
-                background-color: #222;<br>
-                border: medium solid #000;<br>
-            }<br><br>
-            
-            Contenedor de alineación:<br><br>
-            .grid__align3 {<br>
-                display: grid;<br>
-                grid-template-columns: repeat(3, 200px);<br>
-                grid-template-rows: repeat(2, 200px);<br>
-                align-items: center;<br>
-                justify-items: center;<br>
-            }<br><br>
-
-            El diseño para todos los items<br><br>
-            .grid__item3 {<br>
-                padding: 1%;<br>
-                font-size: 1.25rem;<br>
-                background-color: #666;<br>
-                border: 2px solid #999;<br>
-            }<br><br>  
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-css">
+/* Contenedor Principal */
+.grid__container3 {
+    margin: 0 auto;
+    width: 80vw;
+    height: 100vh;
+    background-color: #222;
+    border: medium solid #000;
+}
+    
+/* Contenedor de alineación */
+.grid__align3 {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(2, 200px);
+    align-items: center;
+    justify-items: center;
+}
+
+/* El diseño para todos los items */
+.grid__item3 {
+    padding: 1%;
+    font-size: 1.25rem;
+    background-color: #666;
+    border: 2px solid #999;
+}
+    </code></pre>
 
     <div class="grid__container3 grid__align3">
         <div class="grid__item3"><p>Grid Item 1</p></div>
@@ -256,42 +262,43 @@
             Observar los cambios desde "Inspeccionar Elementos"<br>
             Se realiza con las mismas propiedades que el padre, pero en vez de (align/justify)-ITEMS, va (align/justify)-SELF.
         </h3>
-        <h5 class="itemInfo__example">
-            Contenedor Principal:<br><br>
-            .grid__container4 {<br>
-                margin: 0 auto;<br>
-                width: 80vw;<br>
-                height: 100vh;<br>
-                background-color: #222;<br>
-                border: medium solid #000;<br>
-            }<br><br>
-            
-            Contenedor de alineación:<br><br>
-            .grid__align4 {<br>
-                display: grid;<br>
-                grid-template-columns: repeat(3, 200px);<br>
-                grid-template-rows: repeat(2, 200px);<br>
-            }<br><br>
-
-            El diseño para todos los items<br><br>
-            .grid__item4 {<br>
-                padding: 1%;<br>
-                font-size: 1.25rem;<br>
-                background-color: #666;<br>
-                border: 2px solid #999;<br>
-            }<br><br>
-
-            El diseño para el item personalizado<br><br>
-            .grid__item4:nth-child(5) {<br>
-                padding: 1%;<br>
-                font-size: 1.25rem;<br>
-                background-color: #666;<br>
-                border: 2px solid #999;<br>
-                align-self: end;<br>
-                justify-self: center;<br>
-            }<br><br>
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-css">
+/* Contenedor Principal */
+.grid__container4 {
+    margin: 0 auto;
+    width: 80vw;
+    height: 100vh;
+    background-color: #222;
+    border: medium solid #000;
+}
+      
+/* Contenedor de alineación */
+.grid__align4 {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(2, 200px);
+}
+
+/* El diseño para todos los items */
+.grid__item4 {
+    padding: 1%;
+    font-size: 1.25rem;
+    background-color: #666;
+    border: 2px solid #999;
+}
+
+/* El diseño para el item personalizado */
+.grid__item4:nth-child(5) {
+    padding: 1%;
+    font-size: 1.25rem;
+    background-color: #666;
+    border: 2px solid #999;
+    align-self: end;
+    justify-self: center;
+}
+    </code></pre>
 
     <div class="grid__container4 grid__align4">
         <div class="grid__item4"><p>Grid Item 1</p></div>
@@ -312,5 +319,7 @@
     </div>
     <!-- ------------ Align - Alineando un hijo ------------  -->
 
+    <!-- Comment Code Style -->
+    <script src="https://chrisxavix.github.io/Css/comment-code/prism.js"></script>
 </body>
 </html>

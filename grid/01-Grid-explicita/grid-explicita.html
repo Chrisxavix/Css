@@ -8,6 +8,8 @@
     <!-- Hojas de estilos -->
     <link rel="stylesheet" href="https://chrisxavix.github.io/Css/style/reset.css">
     <link rel="stylesheet" href="https://chrisxavix.github.io/Css/grid/01-Grid-explicita/grid-explicita.css">
+    <!-- Comment Code Style -->
+    <link rel="stylesheet" href="https://chrisxavix.github.io/Css/comment-code/prism.css">
     <!-- Datos -->
     <meta name="description" content="Son las columnas y filas declaradas con valores.">
     <link rel="apple-touch-icon" href="https://chrisxavix.github.io/Css/assets/css.png">
@@ -30,15 +32,16 @@
         <h3 class="itemInfo__title">Son las columnas y filas declaradas con valores, mientras que la Grid Implícita son los que no tienen valores asignados.</h3>
         <h4 class="itemInfo__subtitle">Para las separaciones entre celdas, sea mediante filas o columnas se usa: <br> column-gap: 12px <br> row-gap: 10px; <br><br> o simplicar estos dos usando: <br> gap: 10px 16px <br>Primero va row y luego column.<br></h4>
         <h4 class="itemInfo__subtitle">Usando:</h4>
-        <h5 class="itemInfo__example">
-            .gridExplicit {<br>
-                display: grid;<br>
-                grid-template-columns: repeat(5, 1fr);<br>
-                grid-template-rows: repeat(4, auto);<br>
-                gap: 4px 4px;<br>
-            }<br>
-        </h5>
     </div>
+
+    <pre style="font-size: 12px;"><code class="language-css">
+.gridExplicit {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 4px 4px;
+}
+    </code></pre>
 
     <div class="gridContainer gridExplicit">
         <div class="gridItem"><p>Grid Item 1</p></div>
@@ -63,5 +66,7 @@
     </div>
     <!-- ------------ Grid Explicit ------------  -->
     
+    <!-- Comment Code Style -->
+    <script src="https://chrisxavix.github.io/Css/comment-code/prism.js"></script>
 </body>
 </html>
